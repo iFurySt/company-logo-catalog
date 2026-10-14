@@ -1,0 +1,5 @@
+/data/directory/**/nasdaqlisted.txt -text
+/data/directory/**/otherlisted.txt -text
+*.csv text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf

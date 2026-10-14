@@ -280,7 +280,7 @@ def main():
     if args.gaps:
         text = io.StringIO(newline='')
         writer = csv.DictWriter(text, fieldnames=['symbol', 'securityName', 'exchange', 'issuerNameHint',
-                                                'providerOutcome', 'identityEvidenceUrl'])
+                                                'providerOutcome', 'identityEvidenceUrl'], lineterminator='\n')
         writer.writeheader(); writer.writerows({k: row[k] for k in writer.fieldnames} for row in gaps)
         outputs.append((args.gaps, text.getvalue()))
     for path, text in outputs:
