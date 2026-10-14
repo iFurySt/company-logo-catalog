@@ -1,0 +1,23 @@
+name: Missing or incorrect logo
+description: Propose a company mapping or report an incorrect image.
+body:
+  - type: input
+    id: symbol
+    attributes:
+      label: Market and symbol
+      placeholder: US:AACOW
+    validations:
+      required: true
+  - type: input
+    id: issuer
+    attributes:
+      label: Company name
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence and proposed logo source
+      description: Link issuer/SEC/exchange evidence and explain what is missing or wrong.
+    validations:
+      required: true

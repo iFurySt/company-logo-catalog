@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ifuryst/company-logo-catalog/main/schemas/company.schema.json",
+  "title": "Reviewed company logo record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "reviewedAt",
+    "identityEvidenceUrls",
+    "securities",
+    "logos"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "identityEvidenceUrls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://"
+      }
+    },
+    "cik": {
+      "type": "string",
+      "pattern": "^[0-9]{10}$"
+    },
+    "websiteUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "securities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "market",
+          "symbol",
+          "exchange",
+          "kind",
+          "evidenceUrls"
+        ],
+        "properties": {
+          "market": {
+            "const": "US"
+          },
+          "symbol": {
+            "type": "string",
+            "pattern": "^[A-Z0-9][A-Z0-9.$ -]{0,24}$"
+          },
+          "exchange": {
+            "enum": [
+              "NASDAQ",
+              "NYSE",
+              "NYSE_AMERICAN"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "common",
+              "unit",
+              "warrant",
+              "right",
+              "preferred",
+              "depositary"
+            ]
+          },
+          "evidenceUrls": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            }
+          },
+          "aliases": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z0-9][A-Z0-9.$ -]{0,24}$"
+            }
+          },
+          "validFrom": {
+            "type": "string",
+            "format": "date"
+          },
+          "validTo": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    "logos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "source",
+          "status",
+          "checkedAt",
+          "referenceUrl",
+          "redistribution"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "candidate",
+              "unavailable"
+            ]
+          },
+          "checkedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "referenceUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "redistribution": {
+            "const": "not-granted"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 4,
+            "maximum": 2048
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 4,
+            "maximum": 2048
+          },
+          "format": {
+            "enum": [
+              "png",
+              "jpg",
+              "webp",
+              "svg"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "verified"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "sha256",
+                "width",
+                "height",
+                "format"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
