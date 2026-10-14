@@ -1,22 +1,55 @@
-# Company Logo Catalog
+# 公司 Logo Catalog
 
-维护证券代码 → 公司 → Logo URL 的映射。普通股、Units、权证和优先股可以共用
-发行公司的头像，避免每个代码都需要单独找到图片。
+维护证券、发行人和公司图片来源，支持普通股、权证、单位、优先股等共用发行人图片。
 
-- `data/companies/`：每家公司一份 JSON，包含核实日期、证据和图片来源。
-- `catalog.json`：生成后的完整目录，包含精确代码／别名索引。
-- `verified`：已核对图片身份；`candidate`：待核实；`unavailable`：来源缺失。
-- 查询脚本只返回 `verified` 图片，不自动猜测代码后缀或公司官网。
+## 当前覆盖
+
+以 **2026-10-14 Nasdaq Trader 官方快照**为准，收录全部 **7,481 个非测试、非 ETF 证券**。
+
+| 图片来源状态 | 证券数 |
+| --- | ---: |
+| 已核实公司图片 | 29 |
+| 股票代码对应的供应商图片，尚未逐一核实身份 | 6,486 |
+| 根据目录公司名称提出的共用图片候选，尚未逐一核实发行人 | 562 |
+| 已检查图片字节的 GitHub 来源，尚未逐一核实身份 | 14 |
+| 本轮尚未找到可用来源 | 390 |
+
+这是证券数量，不是公司数量，也不是“全部图片身份已核实”。已核实目录包含
+18 家公司、35 个证券、41 个精确代码／别名，其中 16 家有核实过的公司图片。
+
+[覆盖统计](coverage.json) · [完整供应商目录](catalog-provider.json) ·
+[缺图清单](missing-logos.csv) · [核实记录](docs/full-directory-review.md)
+
+## 查询
 
 ```sh
+# 默认只返回已核实图片
 python3 scripts/catalog.py resolve 'US:AACOW'
-python3 scripts/catalog.py validate
-python3 scripts/catalog.py build
-python3 -m unittest discover -s tests
+
+# 显式允许未逐一核实的供应商图片、名称分组候选和已检查的仓库图片
+python3 scripts/catalog.py resolve 'US:AA' --allow-provider
 ```
 
-首批收录 **14 家公司、31 个证券、37 个代码／别名**，其中 8 家图片已核实，6 家仍为候选。
-优先处理 AIFi 中缺失的权证、Units、优先股头像，并找到 TREO 官网图标。目录不是全市场图库，后续通过
-PR 逐步补充。原始代码和整理的元数据采用 MIT；外部 Logo 的使用条件独立保留。
+`catalog.json` 是已核实公司目录，保留现有 AIFi 读取格式。
+`catalog-provider.json` 是全量证券／来源数据，包含校验和、尺寸、可用性和核实等级；
+消费者需要显式支持这个不同的数据格式。没有把未核实条目自动变成已核实 Logo。
 
-贡献说明：[CONTRIBUTING.md](CONTRIBUTING.md)。
+本轮核对了 Ares、Averin、Wintrust 的品牌来源，并补充 ACCV、ADBT、ADIG、ADRX 的官网图片。
+Apogee 的通用蓝色 A 图片被确认与官网品牌不符，已拒用并加入正确的盾牌标志。
+
+## 维护
+
+Python 3.12+、Node 24+，无需额外依赖或 API Key。
+
+```sh
+python3 scripts/catalog.py validate
+python3 scripts/catalog.py build --check
+python3 -m unittest discover -s tests
+node --test tests/test_probe.mjs
+```
+
+[维护命令](docs/full-directory-maintenance.md) 支持限速、续跑、异常重试和离线生成检查。
+全部图片仍未补齐，390 个缺来源条目和其余图片身份核实需要继续维护。
+
+原创代码及维护的元数据采用 MIT。链接中的第三方图片仍受原权利人及供应商条款约束，
+本仓库不包含第三方图片包。

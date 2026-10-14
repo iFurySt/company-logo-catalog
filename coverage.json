@@ -1,0 +1,29 @@
+{
+  "asOf": "2026-10-14",
+  "scope": "non-test-non-etf-us-securities",
+  "summary": {
+    "securities": 7481,
+    "reviewedIssuerSecurities": 35,
+    "reviewedLogoSecurities": 29,
+    "sourceOutcomes": {
+      "not-found": 962,
+      "png-unverified": 6500,
+      "rejected-image": 19
+    },
+    "unverifiedImageSecurities": 6500,
+    "sharedIssuerCandidateSecurities": 562,
+    "otherSourceCandidateSecurities": 5106,
+    "anyKnownSourceSecurities": 7091,
+    "sourceCheckComplete": true,
+    "verifiedLogoComplete": false,
+    "usableSourceSecurities": 7091,
+    "noUsableSourceSecurities": 390,
+    "resolverOutcomes": {
+      "directory-name-candidate": 562,
+      "provider-unverified": 6486,
+      "repository-unverified": 14,
+      "reviewed": 29,
+      "unresolved": 390
+    }
+  }
+}

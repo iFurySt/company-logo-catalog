@@ -32,3 +32,9 @@ catalog includes the private cache or the image bytes themselves. Provider URL
 availability can change; detect byte changes before reusing a reviewed image.
 
 Primary evidence and logo reference URLs are stored in each company's JSON record.
+
+## Follow-up
+
+See [full-directory review](full-directory-review.md) for the 2026-10-15 changes:
+Ares, Averin and Wintrust reviewed; Apogee generic provider artwork rejected and
+replaced with an official source; four new issuer-site image records.

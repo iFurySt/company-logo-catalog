@@ -1,54 +1,75 @@
 # Company Logo Catalog
 
-A small, reviewed catalog connecting stock securities to companies and company
-logo URLs. Shared issuer mappings let common shares, units, warrants and preferred
-shares use the same company avatar.
+Stock securities, reviewed issuer mappings and company image sources for the
+current US listing directory. Shared issuer mappings let common shares, units,
+warrants and preferred shares use the same company avatar.
 
 [中文说明](README.zh-CN.md) · [Contribute](CONTRIBUTING.md) · [Data format](docs/data-format.md)
 
-## Initial batch
+## Coverage
 
-14 companies, 31 securities and 37 exact symbol/alias keys. Eight company logos
-are verified; six remain candidates. Missing security classes include AACOW,
-AACPR/AACPW, ABR preferred shares, PCG$X, QRED.R and WTFCN. TREO uses its official
-website favicon. See [review notes](docs/initial-review.md) for remaining gaps.
+The 2026-10-14 Nasdaq Trader snapshot contains **7,481 non-test, non-ETF securities**.
+Every one has a recorded source outcome in [catalog-provider.json](catalog-provider.json).
+
+| Result | Securities |
+| --- | ---: |
+| Reviewed company image | 29 |
+| Exact-symbol provider image, not identity-reviewed | 6,486 |
+| Shared image proposed from directory company names, not issuer-reviewed | 562 |
+| Probed repository image, not identity-reviewed | 14 |
+| No usable source found in this pass | 390 |
+
+These are security counts, not distinct companies. Source availability is **not**
+verified issuer/logo identity. The reviewed catalog contains 18 companies,
+35 securities, 41 exact symbol/alias keys and 16 visually reviewed company images.
+See [coverage.json](coverage.json), [missing-logos.csv](missing-logos.csv) and
+[full review notes](docs/full-directory-review.md).
 
 ## Use
 
-Download [catalog.json](catalog.json) from a pinned release or commit. It contains
-company records and an exact `market:symbol` index. No API key is needed to read
-the catalog; linked image sources have their own availability and usage rules.
-
 ```sh
+# Reviewed images only; unknown/unreviewed images remain null.
 python3 scripts/catalog.py resolve 'US:AACOW'
+
+# Explicitly allow unreviewed but byte-checked sources and name-group proposals.
+python3 scripts/catalog.py resolve 'US:AA' --allow-provider
 python3 scripts/catalog.py summary
 ```
 
-The resolver returns a `logoUrl` only for visually reviewed images with status
-`verified`. `candidate` means identity review is incomplete; `unavailable` records
-a known source gap. Unknown/expired securities return no usable logo. Review dates
-are snapshots, not a promise that a URL or ticker stays unchanged.
+Choose the appropriate dataset:
+
+- [catalog.json](catalog.json): reviewed company records and exact issuer index;
+  compatible with the existing AIFi catalog reader.
+- [catalog-provider.json](catalog-provider.json): exhaustive security/source profile
+  with availability, checksum, dimensions and explicit verification levels. It has
+  a different schema shape; consumers must opt into this profile.
+
+The default resolver only returns reviewed images. Provider opt-in never promotes
+an image to `verified`, and known rejected images remain blocked. Repository
+filename presence without a successful byte check is insufficient to return an
+image. Source URLs have independent availability and artwork usage terms.
 
 ## Maintain
 
-Edit one JSON file under `data/companies/`, then validate and rebuild:
+Requires Python 3.12+ and Node 24+; no third-party dependencies or API keys.
 
 ```sh
 python3 scripts/catalog.py validate
 python3 scripts/catalog.py build
 python3 -m unittest discover -s tests
+node --test tests/test_probe.mjs
 ```
 
-Checks run on pushes and pull requests. They use Python's standard library and
-make no network requests. CI checks structure, alias collisions and generated
-output; issuer/image correctness still needs source and visual review.
+See [maintenance commands](docs/full-directory-maintenance.md) for bounded,
+resumable source probes and deterministic inventory rebuilding. CI is offline;
+it validates both generated profiles and runs 28 regression tests.
 
 ## Scope and license
 
-Initial focus: US stocks and the missing security-class avatars observed in
-[AIFi](https://github.com/ifuryst/aifi). This is an incremental catalog, not a
-complete exchange directory or a financial-data API.
+Initial focus is the current Nasdaq Trader candidate universe used by
+[AIFi](https://github.com/ifuryst/aifi), including security classes and non-ETF
+fund/debt listings. OTC and excluded ETFs are outside this snapshot.
 
 Original code and curated metadata are MIT licensed. Linked logos retain their
-owners' rights and provider terms. No third-party image pack is bundled in v0.1.0.
-[Asset policy](assets/README.md) explains how images can be contributed separately.
+owners' rights and source-provider terms. No third-party artwork pack is committed
+or released. [Asset policy](assets/README.md) covers image contributions separately.
