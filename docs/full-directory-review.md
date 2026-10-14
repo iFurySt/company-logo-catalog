@@ -37,9 +37,9 @@ holding-company wordmark or historical variant fully reviewed.
 
 ## Remaining work
 
-The explicitly enabled provider resolver offers a source for 7,091 securities:
-29 reviewed, 6,486 exact-provider, 562 directory-name proposals and 14 repository
-candidates. **390 have no usable source in this pass**; see `missing-logos.csv`.
+The explicitly enabled provider resolver offers a source for 7,139 securities:
+29 reviewed, 6,486 exact-provider, 562 directory-name proposals 14 repository
+candidates and 48 publisher SVG candidates. **342 have no usable source in this pass**; see `missing-logos.csv`.
 That does not prove no logo exists elsewhere. Research their current issuer sites,
 listing notices and original brand assets before promoting or adding mappings.
 
@@ -48,3 +48,13 @@ symbol suffixes. They remain candidates; subsidiaries, sponsors, fund managers,
 renamed/reused tickers and name collisions need independent issuer review.
 Current-source name conflicts disable stale reviewed identity in the inventory.
 Every stock is accounted for, but verified-logo coverage is not complete.
+
+## Additional publisher pass
+
+Stock Analysis exposes exact-symbol SVG images linked from its company pages.
+A second pass started with 390 unresolved securities, obtained 48 bounded SVGs
+that passed local rendering, and stopped after 315 observations when the provider
+returned HTTP 429. The remaining requests were not bypassed or silently recorded
+as completed. Successful SVGs remain `publisher-unverified`, not approved logos;
+342 source gaps remain. No SVG artwork is committed. Consumers need explicit SVG
+support, origin policy and a provider eligibility decision.

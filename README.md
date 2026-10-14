@@ -17,7 +17,8 @@ Every one has a recorded source outcome in [catalog-provider.json](catalog-provi
 | Exact-symbol provider image, not identity-reviewed | 6,486 |
 | Shared image proposed from directory company names, not issuer-reviewed | 562 |
 | Probed repository image, not identity-reviewed | 14 |
-| No usable source found in this pass | 390 |
+| Publisher SVG, not identity-reviewed | 48 |
+| No usable source found in this pass | 342 |
 
 These are security counts, not distinct companies. Source availability is **not**
 verified issuer/logo identity. The reviewed catalog contains 18 companies,
@@ -62,7 +63,7 @@ node --test tests/test_probe.mjs
 
 See [maintenance commands](docs/full-directory-maintenance.md) for bounded,
 resumable source probes and deterministic inventory rebuilding. CI is offline;
-it validates both generated profiles and runs 28 regression tests.
+it validates both generated profiles and runs 30 regression tests.
 
 ## Scope and license
 

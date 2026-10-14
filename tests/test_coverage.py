@@ -93,6 +93,27 @@ class CoverageTests(unittest.TestCase):
         self.assertIsNone(inventory.resolve_inventory(records, 'US:EX', True)['logoUrl'])
         self.assertNotIn('sharedIssuerCandidate', records[1])
 
+    def test_publisher_svg_is_explicitly_unreviewed_and_opt_in_only(self):
+        publisher = {'EX': {'symbol': 'EX', 'url': 'https://logos.stockanalysis.com/ex.svg',
+                           'result': 'svg-unverified', 'format': 'svg', 'sha256': 'b' * 64,
+                           'width': 300, 'height': 300}}
+        records = inventory.build_inventory(inventory.parse_directory(NAS, 'nasdaqlisted.txt'), [], {},
+                                            '2026-10-14', publishers=publisher)
+        self.assertIsNone(inventory.resolve_inventory(records, 'US:EX')['logoUrl'])
+        result = inventory.resolve_inventory(records, 'US:EX', True)
+        self.assertEqual(result['verification'], 'publisher-unverified')
+        self.assertEqual(result['format'], 'svg')
+
+    def test_publisher_checks_refuse_untrusted_origins_missing_hash_and_huge_dimensions(self):
+        row = {'symbol': 'EX', 'url': 'https://logos.stockanalysis.com/ex.svg', 'result': 'svg-unverified',
+               'sha256': 'b' * 64, 'format': 'svg', 'width': 300, 'height': 300}
+        with tempfile.TemporaryDirectory() as temp:
+            p = Path(temp) / 'publisher.jsonl'
+            p.write_text(json.dumps(row)); self.assertEqual(inventory.read_publisher_checks(p)['EX']['width'], 300)
+            for change in [{'url': 'https://evil.example/ex.svg'}, {'sha256': 'bad'}, {'width': 5000}]:
+                p.write_text(json.dumps({**row, **change}))
+                with self.assertRaises(ValueError): inventory.read_publisher_checks(p)
+
     def test_verified_and_expired_catalog_mappings_keep_existing_semantics(self):
         c = company()
         rows = inventory.parse_directory(NAS, 'nasdaqlisted.txt')

@@ -34,15 +34,15 @@ an inventory or invented 100% logo coverage.
 ## Current results
 
 - All 7,481 entries scanned; 6,500 decoded PNGs, 962 404s, 19 bad PNG headers.
-- Provider profile has 7,091 selectable sources with explicit opt-in and retains
-  identity-review levels; 390 entries still have no usable source.
+- Provider profile has 7,139 selectable sources with explicit opt-in and retains
+  identity-review levels; 342 entries still have no usable source.
 - Reviewed catalog has 18 companies, 16 approved images; raw Apogee image rejected.
 - Source coverage is complete as an inventory; the requested complete correct-logo
   coverage is still open. Remaining gaps and bulk identity review are not complete.
 
 ## Open follow-up
 
-Full correct-logo coverage remains unfinished: 390 entries lack a selectable
+Full correct-logo coverage remains unfinished: 342 entries lack a selectable
 source and the bulk supplier/name-group/repository images are not all identity
 reviewed. Source outcomes, frozen snapshots, source-profile data and the gap list
 are published so subsequent review can proceed without repeating this scan.

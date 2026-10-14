@@ -136,7 +136,23 @@ def validate_alternatives(index):
     return index
 
 
-def build_inventory(directory, companies, checks, as_of, alternatives=None):
+def read_publisher_checks(path):
+    result = {}
+    if path is None: return result
+    for line in path.read_text().splitlines():
+        row = json.loads(line)
+        expected = 'https://logos.stockanalysis.com/' + quote(row['symbol'].lower(), safe='') + '.svg'
+        require(row['url'] == expected, 'Publisher source must be the exact fixed-origin symbol SVG')
+        if row['result'] == 'svg-unverified':
+            require(re.fullmatch(r'[a-f0-9]{64}', row.get('sha256', '')) is not None,
+                    'Publisher image checksum required')
+            require(row.get('format') == 'svg' and type(row.get('width')) is int and type(row.get('height')) is int
+                    and 4 <= row['width'] <= 2048 and 4 <= row['height'] <= 2048, 'Publisher dimensions required')
+        result[row['symbol']] = row
+    return result
+
+
+def build_inventory(directory, companies, checks, as_of, alternatives=None, publishers=None):
     require(len({r['symbol'] for r in directory}) == len(directory), 'Cross-source symbol collision')
     company_by_symbol = {s['market'] + ':' + a: c for c in companies for s in c['securities']
                          for a in [s['symbol'], *s.get('aliases', [])]}
@@ -173,6 +189,8 @@ def build_inventory(directory, companies, checks, as_of, alternatives=None):
             record['providerIdentityStatus'] = 'rejected'
         if alternatives and row['symbol'] in alternatives:
             record['otherCandidateSources'] = alternatives[row['symbol']]
+        if publishers and row['symbol'] in publishers:
+            record['publisherCandidate'] = publishers[row['symbol']]
         records.append(record)
     groups = collections.defaultdict(list)
     for row in records:
@@ -202,8 +220,10 @@ def report(records):
             'unverifiedImageSecurities': outcomes.get('png-unverified', 0),
             'sharedIssuerCandidateSecurities': sum('sharedIssuerCandidate' in r for r in records),
             'otherSourceCandidateSecurities': sum(bool(r.get('otherCandidateSources')) for r in records),
+            'publisherCandidateSecurities': sum(r.get('publisherCandidate', {}).get('result') == 'svg-unverified' for r in records),
             'anyKnownSourceSecurities': sum(r['reviewedLogoUrl'] is not None or r['providerOutcome'] == 'png-unverified'
-                                          or 'sharedIssuerCandidate' in r or bool(r.get('otherCandidateSources')) for r in records),
+                                          or 'sharedIssuerCandidate' in r or bool(r.get('otherCandidateSources'))
+                                          or r.get('publisherCandidate', {}).get('result') == 'svg-unverified' for r in records),
             'sourceCheckComplete': outcomes.get('not-tested', 0) == 0,
             'verifiedLogoComplete': all(r['reviewedLogoUrl'] is not None for r in records)}
 
@@ -232,6 +252,12 @@ def resolve_inventory(records, key, allow_unverified=False):
         if checked:
             result.update(logoUrl=checked['url'], verification='repository-unverified',
                           sha256=checked['sha256'], width=checked['width'], height=checked['height'])
+        else:
+            publisher = row.get('publisherCandidate')
+            if publisher and publisher['result'] == 'svg-unverified':
+                result.update(logoUrl=publisher['url'], verification='publisher-unverified',
+                              sha256=publisher['sha256'], width=publisher['width'],
+                              height=publisher['height'], format='svg')
     # A GitHub filename alone cannot establish that actual image bytes are available.
     return result
 
@@ -252,6 +278,7 @@ def main():
     parser.add_argument('--date', required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--alternatives', type=Path, help='Pinned exact filename candidates (JSON symbol index)')
+    parser.add_argument('--publisher-checks', type=Path)
     parser.add_argument('--summary', type=Path)
     parser.add_argument('--gaps', type=Path)
     parser.add_argument('--check', action='store_true', help='Check generated outputs without writing')
@@ -264,7 +291,8 @@ def main():
         directory.extend(parse_directory(raw.decode('utf-8-sig'), filename))
         sources.append({'file': filename, 'url': url, 'sha256': hashlib.sha256(raw).hexdigest()})
     alternatives = validate_alternatives(json.loads(args.alternatives.read_text())) if args.alternatives else None
-    records = build_inventory(directory, companies, read_checks(args.checks), args.date, alternatives)
+    publishers = read_publisher_checks(args.publisher_checks)
+    records = build_inventory(directory, companies, read_checks(args.checks), args.date, alternatives, publishers)
     output = {'schemaVersion': 1, 'profile': 'directory-provider-inventory',
               'asOf': args.date, 'scope': 'non-test-non-etf-us-securities',
               'sources': sources, 'summary': report(records), 'securities': records}

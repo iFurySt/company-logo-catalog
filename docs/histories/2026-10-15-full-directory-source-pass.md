@@ -13,8 +13,8 @@ changed; application integration remains a separate boundary.
   guarded stale identity when a current source name conflicts with a reviewed name.
 - Implemented opt-in provider resolution, bounded resumable source acquisition,
   deterministic inventory/summary/gap rebuilding and offline CI checks.
-- Passed Python validation/build checks, 22 Python tests, six Node tests and full
+- Passed Python validation/build checks, 24 Python tests, six Node tests and full
   generated-output comparison. No third-party artwork files were published.
 
 This is a completed exhaustive source pass, not completion of the requested
-correct-logo coverage: 390 source gaps and bulk image identity review remain open.
+correct-logo coverage: 342 source gaps and bulk image identity review remain open.

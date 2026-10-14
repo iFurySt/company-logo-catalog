@@ -26,6 +26,7 @@ jobs:
           --sources data/directory/2026-10-14
           --checks data/directory/2026-10-14/source-checks.jsonl
           --alternatives data/directory/2026-10-14/github-candidates.json
+          --publisher-checks data/directory/2026-10-14/publisher-checks.jsonl
           --date 2026-10-14
           --output catalog-provider.json
           --summary coverage.json

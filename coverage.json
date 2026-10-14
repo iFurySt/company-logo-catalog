@@ -13,17 +13,19 @@
     "unverifiedImageSecurities": 6500,
     "sharedIssuerCandidateSecurities": 562,
     "otherSourceCandidateSecurities": 5106,
-    "anyKnownSourceSecurities": 7091,
+    "publisherCandidateSecurities": 48,
+    "anyKnownSourceSecurities": 7139,
     "sourceCheckComplete": true,
     "verifiedLogoComplete": false,
-    "usableSourceSecurities": 7091,
-    "noUsableSourceSecurities": 390,
+    "usableSourceSecurities": 7139,
+    "noUsableSourceSecurities": 342,
     "resolverOutcomes": {
       "directory-name-candidate": 562,
       "provider-unverified": 6486,
+      "publisher-unverified": 48,
       "repository-unverified": 14,
       "reviewed": 29,
-      "unresolved": 390
+      "unresolved": 342
     }
   }
 }

@@ -41,7 +41,7 @@ reviewed company-record schema. Exact alias ambiguity is unresolved, not a first
 match. New stock names conflicting with reviewed identity disable stale images.
 
 Provider resolver levels are `reviewed`, `provider-unverified`,
-`directory-name-candidate`, `repository-unverified` and `unresolved`. Default
+`directory-name-candidate`, `repository-unverified`, `publisher-unverified` and `unresolved`. Default
 resolution returns only reviewed images. Byte checks and checksum metadata never
 automatically promote identity. Curated timestamps use the reviewer's local date;
 UTC CI permits the one-day calendar offset needed around midnight.

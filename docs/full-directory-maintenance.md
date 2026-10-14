@@ -52,6 +52,7 @@ python3 scripts/coverage.py \
   --sources data/directory/2026-10-14 \
   --checks data/directory/2026-10-14/source-checks.jsonl \
   --alternatives data/directory/2026-10-14/github-candidates.json \
+  --publisher-checks data/directory/2026-10-14/publisher-checks.jsonl \
   --date 2026-10-14 \
   --output catalog-provider.json \
   --summary coverage.json \
@@ -72,3 +73,6 @@ AIFi readers only consume the reviewed profile and have smaller manifest limits;
 provider-profile integration needs a separate bounded reader and user choice.
 New official company PNG hosts also need explicit host allowlisting in AIFi.
 No application-runtime change is included in this catalog repository task.
+
+The additional SVG publisher pass stopped on HTTP 429. Do not retry access limits
+by bypassing them; record attempted and unattempted entries distinctly.
