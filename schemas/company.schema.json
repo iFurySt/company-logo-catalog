@@ -139,7 +139,8 @@
             "enum": [
               "verified",
               "candidate",
-              "unavailable"
+              "unavailable",
+              "rejected"
             ]
           },
           "checkedAt": {
@@ -199,6 +200,36 @@
             }
           }
         ]
+      }
+    },
+    "directoryNameAliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "symbol",
+          "evidenceUrls"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "evidenceUrls": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            }
+          }
+        }
       }
     }
   }

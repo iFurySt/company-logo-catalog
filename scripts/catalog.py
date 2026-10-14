@@ -9,8 +9,9 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+VERSION = (ROOT / 'VERSION').read_text().strip() if (ROOT / 'VERSION').exists() else '0.1.0'
 KINDS = {'common', 'unit', 'warrant', 'right', 'preferred', 'depositary'}
-STATUSES = {'verified', 'candidate', 'unavailable'}
+STATUSES = {'verified', 'candidate', 'unavailable', 'rejected'}
 
 
 def require(condition, message):
@@ -37,7 +38,9 @@ def url(value):
 def date(value, allow_future=False):
     require(isinstance(value, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', value), 'Use YYYY-MM-DD dates')
     parsed = dt.date.fromisoformat(value)
-    require(allow_future or parsed <= dt.date.today(), 'Review date cannot be in the future')
+    # A reviewer-local date can be one calendar day ahead of UTC CI runners.
+    latest_review_date = dt.datetime.now(dt.timezone.utc).date() + dt.timedelta(days=1)
+    require(allow_future or parsed <= latest_review_date, 'Review date cannot be in the future')
 
 
 def evidence(values):
@@ -57,7 +60,7 @@ def validate(companies):
     ids, keys = set(), {}
     for c in companies:
         fields(c, ('id', 'name', 'reviewedAt', 'identityEvidenceUrls', 'securities', 'logos'),
-               ('cik', 'websiteUrl', 'notes'))
+               ('cik', 'websiteUrl', 'notes', 'directoryNameAliases'))
         require(isinstance(c['id'], str) and re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', c['id']), 'Invalid issuer id')
         require(c['id'] not in ids, 'Duplicate issuer id: ' + c['id'])
         ids.add(c['id'])
@@ -69,6 +72,13 @@ def validate(companies):
             url(c['websiteUrl'])
         if 'notes' in c:
             require(isinstance(c['notes'], str), 'Notes must be text')
+        if 'directoryNameAliases' in c:
+            require(isinstance(c['directoryNameAliases'], list), 'Directory name aliases must be a list')
+            for alias in c['directoryNameAliases']:
+                fields(alias, ('name', 'symbol', 'evidenceUrls'))
+                require(isinstance(alias['name'], str) and alias['name'].strip(), 'Alias name required')
+                require(alias['symbol'] in [s['symbol'] for s in c['securities']], 'Name alias must target an explicit security')
+                evidence(alias['evidenceUrls'])
         require(isinstance(c['securities'], list) and c['securities'], 'Securities are required')
         for s in c['securities']:
             fields(s, ('market', 'symbol', 'exchange', 'kind', 'evidenceUrls'), ('aliases', 'validFrom', 'validTo'))
@@ -134,7 +144,7 @@ def bundle(companies):
     keys = validate(companies)
     return {
         'schemaVersion': 1,
-        'catalogVersion': '0.1.0',
+        'catalogVersion': VERSION,
         'updatedAt': max(c['reviewedAt'] for c in companies),
         'companies': sorted(companies, key=lambda c: c['id']),
         'symbols': dict(sorted(keys.items())),
@@ -160,7 +170,9 @@ def main():
     parser.add_argument('command', choices=('validate', 'build', 'resolve', 'summary'))
     parser.add_argument('symbol', nargs='?', help='Exact key, e.g. US:AACOW')
     parser.add_argument('--check', action='store_true', help='Verify committed bundle is current')
+    parser.add_argument('--allow-provider', action='store_true', help='Resolve audited but unverified provider/name-group images explicitly')
     args = parser.parse_args()
+    require(not args.allow_provider or args.command == 'resolve', '--allow-provider is for resolve only')
     companies = load()
     data = bundle(companies)
     rendered = json.dumps(data, indent=2, ensure_ascii=False) + '\n'
@@ -170,7 +182,16 @@ def main():
         else: path.write_text(rendered)
     elif args.command == 'resolve':
         require(args.symbol, 'Supply an exact market:symbol key')
-        print(json.dumps(resolve(companies, args.symbol), indent=2))
+        result = resolve(companies, args.symbol)
+        inventory_path = ROOT / 'catalog-provider.json'
+        if inventory_path.exists():
+            from coverage import resolve_inventory
+            inventory = json.loads(inventory_path.read_text())
+            directory_result = resolve_inventory(inventory['securities'], args.symbol, args.allow_provider)
+            if directory_result and (directory_result['mappingStatus'] == 'directory-name-conflict' or
+                                     result is None or args.allow_provider and result['logoUrl'] is None):
+                result = directory_result
+        print(json.dumps(result, indent=2))
     elif args.command == 'summary':
         print(json.dumps({'companies': len(companies), 'securities': sum(len(c['securities']) for c in companies),
                           'symbolKeys': len(data['symbols']), 'verifiedLogoCompanies': sum(any(l['status'] == 'verified' for l in c['logos']) for c in companies)}, indent=2))

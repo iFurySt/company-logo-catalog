@@ -1,0 +1,39 @@
+{
+  "id": "adi-global-distribution",
+  "name": "ADI Global Distribution Inc.",
+  "reviewedAt": "2026-10-15",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://investor.adiglobal.com/",
+    "https://investor.adiglobal.com/news/news-details/2026/ADI-Global-Distribution-Completes-Spin-Off-from-Resideo-Technologies-and-Begins-Trading-on-the-New-York-Stock-Exchange/default.aspx"
+  ],
+  "websiteUrl": "https://investor.adiglobal.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ADIG",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://investor.adiglobal.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://s25.q4cdn.com/125328972/files/design/site_logo/ADI_Logo_White.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://investor.adiglobal.com/",
+      "redistribution": "not-granted",
+      "sha256": "79ce8aa519a1d2a87f17bf0f0cbc0bdfa344d81d5030d061b4db5c45b4bab467",
+      "width": 190,
+      "height": 80,
+      "format": "png",
+      "notes": "Issuer site header/favicon asset inspected and decoded. The current directory supplies the exact listing identity. Original remote image dimensions retained; no artwork bundled."
+    }
+  ],
+  "cik": "0002105139"
+}

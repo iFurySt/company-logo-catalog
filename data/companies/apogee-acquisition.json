@@ -1,9 +1,10 @@
 {
   "id": "apogee-acquisition",
   "name": "Apogee Acquisition Corp",
-  "reviewedAt": "2026-10-14",
+  "reviewedAt": "2026-10-15",
   "identityEvidenceUrls": [
-    "https://www.sec.gov/Archives/edgar/data/2102123/000121390026060608/ea0291860-8k_apogee.htm"
+    "https://www.sec.gov/Archives/edgar/data/2102123/000121390026060608/ea0291860-8k_apogee.htm",
+    "https://apogeeacquisitioncorp.com/about-us/"
   ],
   "securities": [
     {
@@ -45,18 +46,32 @@
   ],
   "logos": [
     {
+      "url": "https://apogeeacquisitioncorp.com/wp-content/uploads/2026/02/cropped-AAC-LOGO-192x192.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://apogeeacquisitioncorp.com/about-us/",
+      "redistribution": "not-granted",
+      "sha256": "eab29b76bb12538322399965c34d272d4e8639064b631fca0ee7ee881dddd017",
+      "width": 192,
+      "height": 192,
+      "format": "png",
+      "notes": "Shield/globe/upward-arrow issuer favicon linked by the official About Us page. Image bytes inspected and decoded; metadata only, no artwork bundled."
+    },
+    {
       "url": "https://financialmodelingprep.com/image-stock/AACP.png",
       "source": "fmp-public-image",
-      "status": "candidate",
-      "checkedAt": "2026-10-14",
-      "referenceUrl": "https://www.sec.gov/Archives/edgar/data/2102123/000121390026060608/ea0291860-8k_apogee.htm",
+      "status": "rejected",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://apogeeacquisitioncorp.com/about-us/",
       "redistribution": "not-granted",
       "sha256": "6da1cb8052c7f1036779e1f6c00e80166cc8180453be0ebd3b229c34e0f0afec",
       "width": 100,
       "height": 100,
       "format": "png",
-      "notes": "Blue A mark is available, but no issuer-specific brand reference was verified. Do not treat this monogram as an approved company logo."
+      "notes": "Rejected: the generic blue A supplied by FMP does not match the shield/globe/upward-arrow branding on the issuer website. Never reuse this image as an approved Apogee logo."
     }
   ],
-  "cik": "0002102123"
+  "cik": "0002102123",
+  "websiteUrl": "https://apogeeacquisitioncorp.com/"
 }

@@ -1,0 +1,38 @@
+{
+  "id": "accelevation-holdings",
+  "name": "Accelevation Holdings Corp.",
+  "reviewedAt": "2026-10-15",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://www.accelevation.com/"
+  ],
+  "websiteUrl": "https://www.accelevation.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ACCV",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+        "https://www.accelevation.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://cdn.prod.website-files.com/6a32c781f257940eba92bcf0/6a5e7e4a39e67f4aa00a20d0_accelevation-icon-512-brand.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://www.accelevation.com/",
+      "redistribution": "not-granted",
+      "sha256": "3ed3f7793575576aa7bfecf92f222c89eaba0cb95438a44baea7d2ab10cfc537",
+      "width": 32,
+      "height": 32,
+      "format": "png",
+      "notes": "Issuer site header/favicon asset inspected and decoded. The current directory supplies the exact listing identity. Original remote image dimensions retained; no artwork bundled."
+    }
+  ],
+  "notes": "Operating-brand favicon from Accelevation website; the Nasdaq directory identifies Accelevation Holdings Corp. The source filename says 512 but the returned asset is 32x32; recorded dimensions are actual bytes."
+}

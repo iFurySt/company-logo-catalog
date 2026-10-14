@@ -1,0 +1,39 @@
+{
+  "id": "advasa-holdings",
+  "name": "Advasa Holdings, Inc.",
+  "reviewedAt": "2026-10-15",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://adbt.io/",
+    "https://www.sec.gov/Archives/edgar/data/2084227/000149315226040094/ex99-1.htm"
+  ],
+  "websiteUrl": "https://adbt.io/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ADBT",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+        "https://adbt.io/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://adbt.io/favicon-192.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://adbt.io/",
+      "redistribution": "not-granted",
+      "sha256": "1e78264346ecb96b5475638e49878a7bfbee953a3b8340655aacc1dad6d8d051",
+      "width": 192,
+      "height": 192,
+      "format": "png",
+      "notes": "Issuer site header/favicon asset inspected and decoded. The current directory supplies the exact listing identity. Original remote image dimensions retained; no artwork bundled."
+    }
+  ],
+  "cik": "0002084227"
+}

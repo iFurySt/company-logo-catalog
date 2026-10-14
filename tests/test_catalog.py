@@ -31,7 +31,7 @@ class CatalogTests(unittest.TestCase):
         self.assertIsNone(catalog.resolve([c], 'US:ex'))
 
     def test_candidate_and_unavailable_do_not_leak(self):
-        for status in ('candidate', 'unavailable'):
+        for status in ('candidate', 'unavailable', 'rejected'):
             c = company(); c['logos'][0]['status'] = status
             self.assertIsNone(catalog.resolve([c], 'US:EX')['logoUrl'])
 

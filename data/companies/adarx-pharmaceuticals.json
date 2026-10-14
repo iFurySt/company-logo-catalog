@@ -1,0 +1,37 @@
+{
+  "id": "adarx-pharmaceuticals",
+  "name": "ADARx Pharmaceuticals, Inc.",
+  "reviewedAt": "2026-10-15",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://www.adarx.com/"
+  ],
+  "websiteUrl": "https://www.adarx.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ADRX",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+        "https://www.adarx.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://www.adarx.com/apple-touch-icon.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://www.adarx.com/",
+      "redistribution": "not-granted",
+      "sha256": "5aaf420c69824937312c91e1dec6fd89222068763911ba305d954483ca0f9f1d",
+      "width": 180,
+      "height": 180,
+      "format": "png",
+      "notes": "Issuer site header/favicon asset inspected and decoded. The current directory supplies the exact listing identity. Original remote image dimensions retained; no artwork bundled."
+    }
+  ]
+}

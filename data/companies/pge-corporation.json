@@ -1,7 +1,7 @@
 {
   "id": "pge-corporation",
   "name": "PG&E Corporation",
-  "reviewedAt": "2026-10-14",
+  "reviewedAt": "2026-10-15",
   "identityEvidenceUrls": [
     "https://www.sec.gov/Archives/edgar/data/75488/000100498025000148/pcg-20250930.htm"
   ],
@@ -43,5 +43,15 @@
   ],
   "websiteUrl": "https://investor.pgecorp.com/",
   "cik": "0001004980",
-  "notes": "PCG$X is PG&E Corporation mandatory convertible preferred stock. Other PCG preferred classes can be issued by its utility subsidiary and are intentionally not inferred."
+  "notes": "Nasdaq Trader uses the operating-company display name for PCG. This explicit PCG-only directory naming exception follows the verified holding-company ticker evidence; it does not map other subsidiary securities to PG&E Corporation.",
+  "directoryNameAliases": [
+    {
+      "name": "Pacific Gas & Electric Co.",
+      "symbol": "PCG",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/75488/000100498025000148/pcg-20250930.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ]
+    }
+  ]
 }

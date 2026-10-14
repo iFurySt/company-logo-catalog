@@ -1,7 +1,7 @@
 {
   "id": "wintrust-financial",
   "name": "Wintrust Financial Corporation",
-  "reviewedAt": "2026-10-14",
+  "reviewedAt": "2026-10-15",
   "identityEvidenceUrls": [
     "https://www.sec.gov/Archives/edgar/data/1015328/000110465925046769/tm2513736-3_424b5.htm"
   ],
@@ -29,15 +29,15 @@
     {
       "url": "https://financialmodelingprep.com/image-stock/WTFC.png",
       "source": "fmp-public-image",
-      "status": "candidate",
-      "checkedAt": "2026-10-14",
-      "referenceUrl": "https://ir.wintrust.com/",
+      "status": "verified",
+      "checkedAt": "2026-10-15",
+      "referenceUrl": "https://s205.q4cdn.com/387403231/files/doc_financials/2026/q1/Wintrust-Financial-Corporation-Earnings-Release-Presentation-Q1-2026.pdf",
       "redistribution": "not-granted",
       "sha256": "091d2afcc9d3033ed87684cb8165cc10c6700f80fe00a4d562a2f0fd4e5577db",
       "width": 250,
       "height": 250,
       "format": "png",
-      "notes": "White W mark is technically available; current issuer artwork comparison remains pending."
+      "notes": "Wintrust serif W and underline compared with the official Q1 2026 presentation cover. Provider supplies a white outline variant of the same brand monogram."
     }
   ],
   "websiteUrl": "https://ir.wintrust.com/",

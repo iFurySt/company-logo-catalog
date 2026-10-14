@@ -5,7 +5,7 @@
    exchange notice. Keep market/exchange context and cite every alias. Do not
    turn fuzzy search results or guessed W/U suffixes into company mappings.
 3. Add a HTTPS logo source. Inspect the actual pixels and compare with a verified
-   issuer/brand reference before using `verified`; otherwise use `candidate`.
+   issuer/brand reference before using `verified`; otherwise use `candidate`. Mark confirmed wrong images `rejected`, not merely missing.
    Verified images need SHA256, format, dimensions and a check date. A successful
    HTTP response is insufficient (a prior AACOW lookup returned a Wix logo).
 4. Do not paste API keys, signed URLs or third-party image-pack contents into a PR.
@@ -17,3 +17,6 @@ For symbol changes or reused tickers, close the old record's validity interval
 and add an explicit new record; do not silently overwrite historical identity.
 The current index rejects symbol collisions, so retaining multiple historical
 owners in one catalog will require a versioned schema change.
+
+For broad coverage changes, regenerate both profiles and preserve source snapshots.
+Follow [full-directory maintenance](docs/full-directory-maintenance.md).
