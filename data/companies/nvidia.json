@@ -1,0 +1,36 @@
+{
+  "id": "nvidia",
+  "name": "NVIDIA Corporation",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://investor.nvidia.com/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "NVDA",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/NVDA.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://investor.nvidia.com/",
+      "redistribution": "not-granted",
+      "sha256": "65adfc123c82dd816d8bebeaded5d0bdd72a4a799d1c0e23d310eaf6e2c457e6",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Recognizable corporate mark reviewed visually; color/theme variant may differ from the latest brand guide."
+    }
+  ],
+  "websiteUrl": "https://investor.nvidia.com/"
+}

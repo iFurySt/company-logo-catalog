@@ -1,0 +1,75 @@
+{
+  "id": "arbor-realty-trust",
+  "name": "Arbor Realty Trust, Inc.",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/1253986/000125398626000036/abr-20260331.htm"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ABR",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/1253986/000125398626000036/abr-20260331.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ABR$D",
+      "exchange": "NYSE",
+      "kind": "preferred",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/1253986/000125398626000036/abr-20260331.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ],
+      "aliases": [
+        "ABR-PD"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ABR$E",
+      "exchange": "NYSE",
+      "kind": "preferred",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/1253986/000125398626000036/abr-20260331.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ],
+      "aliases": [
+        "ABR-PE"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ABR$F",
+      "exchange": "NYSE",
+      "kind": "preferred",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/1253986/000125398626000036/abr-20260331.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ],
+      "aliases": [
+        "ABR-PF"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ABR.png",
+      "source": "fmp-public-image",
+      "status": "candidate",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://ir.arbor.com/",
+      "redistribution": "not-granted",
+      "sha256": "7936760e510db7dcd93d86b67660211a77a0fa18642f81a313edd2f7fe0fd835",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "White symbol requires comparison with current issuer artwork; use the verified security mapping independently of the image."
+    }
+  ],
+  "websiteUrl": "https://ir.arbor.com/",
+  "cik": "0001253986"
+}

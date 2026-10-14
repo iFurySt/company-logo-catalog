@@ -1,0 +1,62 @@
+{
+  "id": "quasaredge-acquisition",
+  "name": "QuasarEdge Acquisition Corporation",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/2085177/000182912626006503/quasaredgeacq_10q.htm"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "QRED",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2085177/000182912626006503/quasaredgeacq_10q.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QRED.U",
+      "exchange": "NYSE",
+      "kind": "unit",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2085177/000182912626006503/quasaredgeacq_10q.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ],
+      "aliases": [
+        "QRED U"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QRED.R",
+      "exchange": "NYSE",
+      "kind": "right",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2085177/000182912626006503/quasaredgeacq_10q.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ],
+      "aliases": [
+        "QRED RT"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/QRED.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://quasaredge.co/",
+      "redistribution": "not-granted",
+      "sha256": "2e729f43f08fc891f5f87ffda44b720b945b22c930dd448d1349aa8582578e1c",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "QUASAREDGE wordmark matches the current issuer name on its website. This is not the unrelated Qred lending brand."
+    }
+  ],
+  "websiteUrl": "https://quasaredge.co/",
+  "cik": "0002085177"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "apple",
+  "name": "Apple Inc.",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://investor.apple.com/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "AAPL",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/AAPL.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://investor.apple.com/",
+      "redistribution": "not-granted",
+      "sha256": "41483c742e810831c12663ef2040d306f81440e15126f34b623dd08a09bbb63e",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Recognizable corporate mark reviewed visually; color/theme variant may differ from the latest brand guide."
+    }
+  ],
+  "websiteUrl": "https://investor.apple.com/"
+}

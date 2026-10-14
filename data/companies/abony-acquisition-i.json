@@ -1,0 +1,54 @@
+{
+  "id": "abony-acquisition-i",
+  "name": "Abony Acquisition Corp. I",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/2099906/000121390026018826/ea0277646-8k_abony1.htm"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "AACO",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2099906/000121390026018826/ea0277646-8k_abony1.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AACOU",
+      "exchange": "NASDAQ",
+      "kind": "unit",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2099906/000121390026018826/ea0277646-8k_abony1.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AACOW",
+      "exchange": "NASDAQ",
+      "kind": "warrant",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2099906/000121390026018826/ea0277646-8k_abony1.htm"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/AACO.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://www.abonyacquisitioncorp.com/",
+      "redistribution": "not-granted",
+      "sha256": "894d3fff3328edb3cd9ef1498abbc7dbbdf538c4b56b0feaee419e2d21d054c3",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Reviewed ABONY wordmark identifies the company; reusable across this issuer's ordinary shares, units and warrants."
+    }
+  ],
+  "websiteUrl": "https://www.abonyacquisitioncorp.com/",
+  "cik": "0002099906"
+}

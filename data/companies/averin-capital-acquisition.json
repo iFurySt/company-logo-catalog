@@ -1,0 +1,53 @@
+{
+  "id": "averin-capital-acquisition",
+  "name": "Averin Capital Acquisition Corp.",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/2096900/000121390026085680/ea0300633-10q_averin.htm"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ACAA",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2096900/000121390026085680/ea0300633-10q_averin.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ACAAU",
+      "exchange": "NASDAQ",
+      "kind": "unit",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2096900/000121390026085680/ea0300633-10q_averin.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ACAAW",
+      "exchange": "NASDAQ",
+      "kind": "warrant",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2096900/000121390026085680/ea0300633-10q_averin.htm"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ACAA.png",
+      "source": "fmp-public-image",
+      "status": "candidate",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://www.sec.gov/Archives/edgar/data/2096900/000121390026085680/ea0300633-10q_averin.htm",
+      "redistribution": "not-granted",
+      "sha256": "ab077b16c04d9ed110d2aabc82e85ba209b21f7bc088fdc0439d41f29e1febb3",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Averin wordmark is available. Sponsor branding must be distinguished from issuer-specific approval before promotion."
+    }
+  ],
+  "cik": "0002096900"
+}

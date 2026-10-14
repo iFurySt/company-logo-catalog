@@ -1,0 +1,36 @@
+{
+  "id": "advanced-micro-devices",
+  "name": "Advanced Micro Devices, Inc.",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://ir.amd.com/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "AMD",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/AMD.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://ir.amd.com/",
+      "redistribution": "not-granted",
+      "sha256": "2c94246f0c6dd24e4136d603400d486def9be17696db53d7841533011b3a99c9",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Recognizable corporate mark reviewed visually; color/theme variant may differ from the latest brand guide."
+    }
+  ],
+  "websiteUrl": "https://ir.amd.com/"
+}

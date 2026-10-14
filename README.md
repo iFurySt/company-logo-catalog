@@ -6,6 +6,13 @@ shares use the same company avatar.
 
 [中文说明](README.zh-CN.md) · [Contribute](CONTRIBUTING.md) · [Data format](docs/data-format.md)
 
+## Initial batch
+
+14 companies, 31 securities and 37 exact symbol/alias keys. Eight company logos
+are verified; six remain candidates. Missing security classes include AACOW,
+AACPR/AACPW, ABR preferred shares, PCG$X, QRED.R and WTFCN. TREO uses its official
+website favicon. See [review notes](docs/initial-review.md) for remaining gaps.
+
 ## Use
 
 Download [catalog.json](catalog.json) from a pinned release or commit. It contains

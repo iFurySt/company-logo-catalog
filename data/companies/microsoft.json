@@ -1,0 +1,36 @@
+{
+  "id": "microsoft",
+  "name": "Microsoft Corporation",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://www.microsoft.com/en-us/investor/default"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "MSFT",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/MSFT.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://www.microsoft.com/en-us/investor/default",
+      "redistribution": "not-granted",
+      "sha256": "5464732326598baca91f5aaa9b19ca9b8ced1655465a41a54f3424485be5e33a",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Recognizable corporate mark reviewed visually; color/theme variant may differ from the latest brand guide."
+    }
+  ],
+  "websiteUrl": "https://www.microsoft.com/en-us/investor/default"
+}

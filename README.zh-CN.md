@@ -15,7 +15,8 @@ python3 scripts/catalog.py build
 python3 -m unittest discover -s tests
 ```
 
-首批优先处理 AIFi 中缺失的权证、Units、优先股头像。目录不是全市场图库，后续通过
+首批收录 **14 家公司、31 个证券、37 个代码／别名**，其中 8 家图片已核实，6 家仍为候选。
+优先处理 AIFi 中缺失的权证、Units、优先股头像，并找到 TREO 官网图标。目录不是全市场图库，后续通过
 PR 逐步补充。原始代码和整理的元数据采用 MIT；外部 Logo 的使用条件独立保留。
 
 贡献说明：[CONTRIBUTING.md](CONTRIBUTING.md)。

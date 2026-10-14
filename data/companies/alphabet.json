@@ -1,0 +1,45 @@
+{
+  "id": "alphabet",
+  "name": "Alphabet Inc.",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://abc.xyz/investor/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "GOOGL",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GOOG",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/GOOGL.png",
+      "source": "fmp-public-image",
+      "status": "candidate",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://abc.xyz/investor/",
+      "redistribution": "not-granted",
+      "sha256": "bd3b7de49841562702c9b4f18f221a2c318979e1380f1658064600081021e4fe",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Source serves the Google G mark, not the Alphabet wordmark. A deliberate issuer/operating-brand mapping review is required before promotion."
+    }
+  ],
+  "websiteUrl": "https://abc.xyz/investor/"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "tactical-resources",
+  "name": "Tactical Resources Corp.",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://tacticalresources.com/tactical-resources-a-u-s-focused-rare-earth-elements-development-company-begins-trading-on-nasdaq-under-ticker-symbol-treo/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "TREO",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://tacticalresources.com/tactical-resources-a-u-s-focused-rare-earth-elements-development-company-begins-trading-on-nasdaq-under-ticker-symbol-treo/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://tacticalresources.com/wp-content/uploads/2021/04/favicon-300x300.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://tacticalresources.com/",
+      "redistribution": "not-granted",
+      "sha256": "5b50c33e1058ab2da1b29c7ab2833dc061e790a9384b55b8ed2311e1938d8a9a",
+      "width": 300,
+      "height": 300,
+      "format": "png",
+      "notes": "Official site-linked square favicon; red target and white T mark. FMP TREO URL was 404 during the initial audit."
+    }
+  ],
+  "websiteUrl": "https://tacticalresources.com/"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "ares-acquisition-iii",
+  "name": "Ares Acquisition Corporation III",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/2128115/000110465926099241/tm2622817d1_8k.htm"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "AAC",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2128115/000110465926099241/tm2622817d1_8k.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AAC.U",
+      "exchange": "NYSE",
+      "kind": "unit",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2128115/000110465926099241/tm2622817d1_8k.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AAC.W",
+      "exchange": "NYSE",
+      "kind": "warrant",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/2128115/000110465926099241/tm2622817d1_8k.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ],
+      "aliases": [
+        "AAC WS"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/AAC.png",
+      "source": "fmp-public-image",
+      "status": "candidate",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://www.ares.com/us/our-strategies/aac-iii",
+      "redistribution": "not-granted",
+      "sha256": "5649ab646617ce8d28cc910b098a38a9d89ada4a86ede8aa43c92ff32eedd450",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "Ares sponsor-brand mark from a reused ticker. The current issuer uses Ares branding, but an issuer-specific visual check remains pending."
+    }
+  ],
+  "websiteUrl": "https://www.ares.com/us/our-strategies/aac-iii",
+  "cik": "0002128115"
+}

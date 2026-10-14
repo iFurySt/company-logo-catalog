@@ -1,0 +1,47 @@
+{
+  "id": "pge-corporation",
+  "name": "PG&E Corporation",
+  "reviewedAt": "2026-10-14",
+  "identityEvidenceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/75488/000100498025000148/pcg-20250930.htm"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "PCG",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/75488/000100498025000148/pcg-20250930.htm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PCG$X",
+      "exchange": "NYSE",
+      "kind": "preferred",
+      "evidenceUrls": [
+        "https://www.sec.gov/Archives/edgar/data/75488/000100498025000148/pcg-20250930.htm",
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/PCG.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-14",
+      "referenceUrl": "https://investor.pgecorp.com/",
+      "redistribution": "not-granted",
+      "sha256": "10d65deaf80028a8495e564489963fb5a203d9354f46cc219a7e62cdd3ee1232",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "PG&E blue/yellow mark, reviewed as issuer-identifying artwork shared by the corporate brand."
+    }
+  ],
+  "websiteUrl": "https://investor.pgecorp.com/",
+  "cik": "0001004980",
+  "notes": "PCG$X is PG&E Corporation mandatory convertible preferred stock. Other PCG preferred classes can be issued by its utility subsidiary and are intentionally not inferred."
+}
