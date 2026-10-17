@@ -1,0 +1,37 @@
+{
+  "id": "ford-motor",
+  "name": "Ford Motor Company",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://corporate.ford.com/"
+  ],
+  "websiteUrl": "https://corporate.ford.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "F",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://corporate.ford.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/F.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://corporate.ford.com/",
+      "redistribution": "not-granted",
+      "sha256": "e2980349794323b1b5b96ca9356e303cf40b7e491aafbe584330170dac409667",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Blue oval Ford script compared with official corporate-site favicon script."
+    }
+  ]
+}

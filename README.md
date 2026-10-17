@@ -13,18 +13,21 @@ Every one has a recorded source outcome in [catalog-provider.json](catalog-provi
 
 | Result | Securities |
 | --- | ---: |
-| Reviewed company image | 29 |
-| Exact-symbol provider image, not identity-reviewed | 6,486 |
+| Reviewed company image | 53 |
+| Exact-symbol provider image, not identity-reviewed | 6,462 |
 | Shared image proposed from directory company names, not issuer-reviewed | 562 |
 | Probed repository image, not identity-reviewed | 14 |
 | Publisher SVG, not identity-reviewed | 48 |
 | No usable source found in this pass | 342 |
 
 These are security counts, not distinct companies. Source availability is **not**
-verified issuer/logo identity. The reviewed catalog contains 18 companies,
-35 securities, 41 exact symbol/alias keys and 16 visually reviewed company images.
+verified issuer/logo identity. The reviewed catalog contains 42 companies,
+59 securities, 65 exact symbol/alias keys and 40 visually reviewed company images.
 See [coverage.json](coverage.json), [missing-logos.csv](missing-logos.csv) and
 [full review notes](docs/full-directory-review.md).
+
+Latest batch: [24 issuer reviews, 2026-10-17](docs/review-2026-10-17.md), including
+ECL, ED, EFX, EG, EIX, EL and the corrected Elevance Health image.
 
 ## Use
 

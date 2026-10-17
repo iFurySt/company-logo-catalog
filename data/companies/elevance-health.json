@@ -1,0 +1,50 @@
+{
+  "id": "elevance-health",
+  "name": "Elevance Health, Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.elevancehealth.com/"
+  ],
+  "websiteUrl": "https://www.elevancehealth.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ELV",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.elevancehealth.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://www.elevancehealth.com/content/dam/elevance-health-non-index/logos/Elevance_Health_Avatar_1200x1200.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.elevancehealth.com/",
+      "redistribution": "not-granted",
+      "sha256": "feed3facd56500d8ba6f902ab1bde97b3d9704a0158b5ba8eaa68ad10afccc5f",
+      "width": 1200,
+      "height": 1200,
+      "format": "png",
+      "notes": "Official navy E with cyan roof touch/favicon asset, compared with the issuer header. Replaces the unrelated generic A."
+    },
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ELV.png",
+      "source": "fmp-public-image",
+      "status": "rejected",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.elevancehealth.com/",
+      "redistribution": "not-granted",
+      "sha256": "46a2735c425c6f175bf8a178da8151984303523c4e369634c3d50f6c920f2c7a",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Rejected generic white A on blue: it does not match the official Elevance Health E/roof branding. Known artwork checksum retained to block cached copies."
+    }
+  ]
+}

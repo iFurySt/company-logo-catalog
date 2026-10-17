@@ -1,0 +1,37 @@
+{
+  "id": "dte-energy",
+  "name": "DTE Energy Company",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://ir.dteenergy.com/"
+  ],
+  "websiteUrl": "https://ir.dteenergy.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "DTE",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://ir.dteenergy.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/DTE.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://ir.dteenergy.com/",
+      "redistribution": "not-granted",
+      "sha256": "5a52bba9d5028c8f0e58568fbb01c4f74bf6d91ab3502c073cfa8e826062e809",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "DTE lettermark compared with the official investor-site header and favicon."
+    }
+  ]
+}

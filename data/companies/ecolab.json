@@ -1,0 +1,37 @@
+{
+  "id": "ecolab",
+  "name": "Ecolab Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.ecolab.com/en-us"
+  ],
+  "websiteUrl": "https://www.ecolab.com/en-us",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ECL",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.ecolab.com/en-us"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ECL.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.ecolab.com/en-us",
+      "redistribution": "not-granted",
+      "sha256": "f3eb4d17bd0c624eaca1ecea8b67a1f0d50b675f438089e1e80e10c908b3f23a",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Blue circular star mark compared with the star device in the official Ecolab wordmark."
+    }
+  ]
+}

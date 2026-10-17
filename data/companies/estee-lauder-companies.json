@@ -1,0 +1,37 @@
+{
+  "id": "estee-lauder-companies",
+  "name": "Estee Lauder Companies, Inc. (The)",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.elcompanies.com/en/"
+  ],
+  "websiteUrl": "https://www.elcompanies.com/en/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EL",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.elcompanies.com/en/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EL.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.elcompanies.com/en/",
+      "redistribution": "not-granted",
+      "sha256": "e3a87a1d587931bbd8a04637e946f533bb6312fc076337f3d68a5b91307f312b",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Issuer-identifying Estee Lauder Companies wordmark; stacked provider presentation differs from the horizontal website header."
+    }
+  ]
+}

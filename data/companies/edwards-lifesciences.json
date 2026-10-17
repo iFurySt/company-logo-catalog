@@ -1,0 +1,37 @@
+{
+  "id": "edwards-lifesciences",
+  "name": "Edwards Lifesciences Corporation",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.edwards.com/"
+  ],
+  "websiteUrl": "https://www.edwards.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EW",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.edwards.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EW.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.edwards.com/",
+      "redistribution": "not-granted",
+      "sha256": "daac35c57cc4b99d84c9916be6d6f7a6ac6798d6d91b7707770031ab94861202",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Gray E device and Edwards wordmark compared with the official header and favicon."
+    }
+  ]
+}

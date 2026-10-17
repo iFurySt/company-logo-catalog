@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.0 — 2026-10-17
+
+- Add 24 visually reviewed US issuer records, prioritizing the E-symbol list.
+- ECL, ED, EFX, EG, EIX and EL now have reviewed exact-symbol mappings.
+- Prefer official small-icon artwork for Analog Devices and Elevance Health;
+  reject the generic A returned for ELV and retain its checksum.
+- Recheck 36 bounded FMP sources: all valid PNGs, unchanged from the frozen audit.
+- Reviewed coverage: 42 companies / 59 securities / 65 keys / 40 company images.
+- Preserve the frozen 7,481-security inventory and its unreviewed distinctions;
+  no third-party artwork files published.
+
 ## 0.2.0 — 2026-10-15
 
 - Full frozen-directory profile: 7,481 securities with exhaustive source outcomes.

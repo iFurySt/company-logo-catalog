@@ -1,0 +1,37 @@
+{
+  "id": "eqt-corporation",
+  "name": "EQT Corporation",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.eqt.com/"
+  ],
+  "websiteUrl": "https://www.eqt.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EQT",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.eqt.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EQT.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.eqt.com/",
+      "redistribution": "not-granted",
+      "sha256": "72aada70e5e0ab63d74af0520cb781fece0e92b6979a2d4eadfc994b74ba5bc4",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Pink/gray Q device compared with the official EQT Corporation header and favicon. Not the unrelated investment firm."
+    }
+  ]
+}

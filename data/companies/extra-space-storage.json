@@ -1,0 +1,37 @@
+{
+  "id": "extra-space-storage",
+  "name": "Extra Space Storage Inc",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.extraspace.com/"
+  ],
+  "websiteUrl": "https://www.extraspace.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EXR",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.extraspace.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EXR.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.extraspace.com/",
+      "redistribution": "not-granted",
+      "sha256": "f4fa95cda7df43411c38f49880c228b50aab81e2b699d43ec3c341836af54842",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Provider uses the issuer-identifying full Extra Space Storage wordmark on green; current website favicon abbreviates it to ESS."
+    }
+  ]
+}

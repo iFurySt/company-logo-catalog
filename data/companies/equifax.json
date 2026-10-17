@@ -1,0 +1,37 @@
+{
+  "id": "equifax",
+  "name": "Equifax, Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://investor.equifax.com/"
+  ],
+  "websiteUrl": "https://www.equifax.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EFX",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://investor.equifax.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EFX.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://investor.equifax.com/",
+      "redistribution": "not-granted",
+      "sha256": "dde107ecb9864cefbaa36fee168ae639cdf74d46c90cc21df9e1807b53615a65",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Equifax italic wordmark compared with the official investor-site header. Provider uses a red circular background."
+    }
+  ]
+}

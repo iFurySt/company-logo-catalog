@@ -1,0 +1,37 @@
+{
+  "id": "everest-group",
+  "name": "Everest Group, Ltd.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://s203.q4cdn.com/937887252/files/doc_financials/2025/q4/Everest-4Q-25-Investor-Presentation.pdf"
+  ],
+  "websiteUrl": "https://www.everestglobal.com/us-en",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EG",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://s203.q4cdn.com/937887252/files/doc_financials/2025/q4/Everest-4Q-25-Investor-Presentation.pdf"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EG.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://s203.q4cdn.com/937887252/files/doc_financials/2025/q4/Everest-4Q-25-Investor-Presentation.pdf",
+      "redistribution": "not-granted",
+      "sha256": "37503f6b5979aff30fc29eac7c35116e87946004f23a7735e6cf6a935185414b",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Blue three-slope mountain device compared with the cover of the official Q4 2025 investor presentation."
+    }
+  ]
+}

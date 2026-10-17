@@ -1,0 +1,37 @@
+{
+  "id": "consolidated-edison",
+  "name": "Consolidated Edison, Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.conedison.com/en/"
+  ],
+  "websiteUrl": "https://www.conedison.com/en/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ED",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.conedison.com/en/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ED.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.conedison.com/en/",
+      "redistribution": "not-granted",
+      "sha256": "032007f9520d373e043620a87ccdb80d8994ede67d7707725b8adc3f2613cdc9",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Con Edison interlocking C/E symbol and wordmark compared with official header and favicon."
+    }
+  ]
+}

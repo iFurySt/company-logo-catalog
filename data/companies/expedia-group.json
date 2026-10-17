@@ -1,0 +1,37 @@
+{
+  "id": "expedia-group",
+  "name": "Expedia Group, Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://www.expediagroup.com/"
+  ],
+  "websiteUrl": "https://www.expediagroup.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EXPE",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+        "https://www.expediagroup.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EXPE.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.expediagroup.com/",
+      "redistribution": "not-granted",
+      "sha256": "e9c19aba301740fd3be19eb111766ebce2d35cde6c77bc01e106f15cc98ed9e7",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Blue/purple e device compared with the official Expedia Group header; distinct from the Expedia travel-service wordmark."
+    }
+  ]
+}

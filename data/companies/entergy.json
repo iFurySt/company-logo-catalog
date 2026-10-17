@@ -1,0 +1,37 @@
+{
+  "id": "entergy",
+  "name": "Entergy Corporation",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.entergy.com/"
+  ],
+  "websiteUrl": "https://www.entergy.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ETR",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.entergy.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ETR.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.entergy.com/",
+      "redistribution": "not-granted",
+      "sha256": "ad0225470a81edcc293fbdccab7b10c7483f2a79a2e044a049e14388fb22a9c0",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Pink/purple e device compared with official Entergy header and favicon."
+    }
+  ]
+}

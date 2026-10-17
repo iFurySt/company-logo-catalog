@@ -1,0 +1,37 @@
+{
+  "id": "edison-international",
+  "name": "Edison International",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.edison.com/"
+  ],
+  "websiteUrl": "https://www.edison.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EIX",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.edison.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EIX.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.edison.com/",
+      "redistribution": "not-granted",
+      "sha256": "aaf8e76a80c073719c2ea5f8f82b4dfe6ab46fcaf80939e353c5aa1234cc1586",
+      "width": 128,
+      "height": 129,
+      "format": "png",
+      "notes": "Yellow sunburst / green square compared with the official issuer favicon and header."
+    }
+  ]
+}

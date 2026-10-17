@@ -1,0 +1,37 @@
+{
+  "id": "dominos-pizza",
+  "name": "Domino's Pizza Inc",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://biz.dominos.com/"
+  ],
+  "websiteUrl": "https://biz.dominos.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "DPZ",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+        "https://biz.dominos.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/DPZ.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://biz.dominos.com/",
+      "redistribution": "not-granted",
+      "sha256": "0d433fe8bc0338dabb0d9c5721c853526d4909c12074d57fe273970747a4d40d",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Red/blue domino tile compared with the official corporate-site header."
+    }
+  ]
+}

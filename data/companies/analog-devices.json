@@ -1,0 +1,50 @@
+{
+  "id": "analog-devices",
+  "name": "Analog Devices, Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "https://www.analog.com/en/index.html"
+  ],
+  "websiteUrl": "https://www.analog.com/en/index.html",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ADI",
+      "exchange": "NASDAQ",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+        "https://www.analog.com/en/index.html"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://www.analog.com/media/favicon/adi-icon-iphone-retina-180x180.png",
+      "source": "issuer-website",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.analog.com/en/index.html",
+      "redistribution": "not-granted",
+      "sha256": "208248093233d6652e59d77d09609669ee3d0ddc575da2d340ad23eac58e9985",
+      "width": 180,
+      "height": 180,
+      "format": "png",
+      "notes": "Official blue square / white triangle touch icon preferred to the older gray triangle provider asset."
+    },
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ADI.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.analog.com/en/index.html",
+      "redistribution": "not-granted",
+      "sha256": "45fbe60477ea2a4d84cedf33221b44f4ed4822b781bce664228d84bc4830303f",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Official blue square / white triangle touch icon preferred to the older gray triangle provider asset."
+    }
+  ]
+}

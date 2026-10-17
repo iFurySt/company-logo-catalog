@@ -1,0 +1,37 @@
+{
+  "id": "eversource-energy",
+  "name": "Eversource Energy (D/B/A)",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.eversource.com/"
+  ],
+  "websiteUrl": "https://www.eversource.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "ES",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.eversource.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/ES.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.eversource.com/",
+      "redistribution": "not-granted",
+      "sha256": "a1023bb892504d817cd73fd49808d7b9238a9be7175f292eb80a922cf2c3736e",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Blue/green striped circular device compared with the O device in the official EVERSOURCE header."
+    }
+  ]
+}

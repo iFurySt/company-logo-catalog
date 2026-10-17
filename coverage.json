@@ -3,8 +3,8 @@
   "scope": "non-test-non-etf-us-securities",
   "summary": {
     "securities": 7481,
-    "reviewedIssuerSecurities": 35,
-    "reviewedLogoSecurities": 29,
+    "reviewedIssuerSecurities": 59,
+    "reviewedLogoSecurities": 53,
     "sourceOutcomes": {
       "not-found": 962,
       "png-unverified": 6500,
@@ -21,10 +21,10 @@
     "noUsableSourceSecurities": 342,
     "resolverOutcomes": {
       "directory-name-candidate": 562,
-      "provider-unverified": 6486,
+      "provider-unverified": 6462,
       "publisher-unverified": 48,
       "repository-unverified": 14,
-      "reviewed": 29,
+      "reviewed": 53,
       "unresolved": 342
     }
   }

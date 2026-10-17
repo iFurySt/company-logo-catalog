@@ -1,0 +1,37 @@
+{
+  "id": "emerson-electric",
+  "name": "Emerson Electric Company",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.emerson.com/en-us"
+  ],
+  "websiteUrl": "https://www.emerson.com/en-us",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "EMR",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.emerson.com/en-us"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/EMR.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.emerson.com/en-us",
+      "redistribution": "not-granted",
+      "sha256": "456fda66b1c58063d2b8f7af46882aadace2797dc1adc83fe0d2066cde60d525",
+      "width": 240,
+      "height": 150,
+      "format": "png",
+      "notes": "Blue striped device and EMERSON wordmark compared with official header and favicon."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "digital-realty-trust",
+  "name": "Digital Realty Trust, Inc.",
+  "reviewedAt": "2026-10-17",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.digitalrealty.com/"
+  ],
+  "websiteUrl": "https://www.digitalrealty.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "DLR",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.digitalrealty.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/DLR.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://www.digitalrealty.com/",
+      "redistribution": "not-granted",
+      "sha256": "a373b05eb41cc0656864bbbeedd4c577ddf8e9da6bb87073c5e4e9564d4bf30e",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Four-corner D device compared with official Digital Realty header and favicon."
+    }
+  ]
+}
