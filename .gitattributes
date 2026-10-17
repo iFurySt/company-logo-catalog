@@ -3,3 +3,6 @@
 *.csv text eol=lf
 *.json text eol=lf
 *.jsonl text eol=lf
+
+# Provider snapshots are immutable byte evidence, including CRLF.
+data/directory/*/*.txt -text whitespace=cr-at-eol
