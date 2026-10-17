@@ -66,6 +66,21 @@ An eight-symbol EODHD legacy-image-path sample returned eight 404s; a publisher
 provider failure. Paid/authenticated logo APIs and audited SVG conversion remain
 possible follow-ups, not fabricated coverage in this report.
 
+## Additional source follow-up
+
+A bounded follow-up tested [LoadLogo](https://loadlogo.com/docs) using its documented PNG ticker endpoint and
+`fallback=404`. BXBL still returned a ticker-letter monogram (not company artwork)
+and its metadata endpoint returned 404. AMRO returned a 1,549×2,062 PNG despite
+`size=128`, exceeding the current host height cap. Neither response was silently
+counted as a usable App logo. This sample is not a universal judgment of the API;
+other symbols and an audited resizing path may be investigated independently.
+[Exact probe outcomes](../data/audits/2026-10-18/additional-source-probes.json)
+preserve URLs, status and byte hashes. No third-party images are published.
+
+An additional NYSE repository inventory request hit GitHub API HTTP 403 rate
+limits and stopped. Its coverage is unknown; the existing 7,108/376 accounting
+is unchanged.
+
 ## Reproduce
 
 In AIFi, export the current local directory through its CLI, then run:

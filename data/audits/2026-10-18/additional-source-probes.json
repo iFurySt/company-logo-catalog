@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-17T17:00:47.450362+00:00",
+  "notes": "Bounded follow-up probes, not a fresh check of every prior source. No artwork is redistributed.",
+  "observations": [
+    {
+      "symbol": "BXBL",
+      "url": "https://img.loadlogo.com/ticker/BXBL?size=128&format=png&fallback=404",
+      "httpStatus": 200,
+      "sha256": "f1509914ae7f8ef368301c008dfa613c3fda423ae8a770369217163002517439",
+      "bytes": 5243,
+      "result": "not-accepted",
+      "reason": "ticker-monogram-not-company-artwork"
+    },
+    {
+      "symbol": "AMRO",
+      "url": "https://img.loadlogo.com/ticker/AMRO?size=128&format=png&fallback=404",
+      "httpStatus": 200,
+      "sha256": "dbcb87addb5b65f409a56b1181c45404f876b19be8acaf0c1eab43f9343de8d3",
+      "bytes": 17467,
+      "result": "not-accepted",
+      "reason": "height-2062-exceeds-current-host-2048-cap"
+    },
+    {
+      "symbol": "BXBL",
+      "url": "https://api.loadlogo.com/ticker/BXBL",
+      "httpStatus": 404,
+      "result": "not-found"
+    }
+  ],
+  "repositoryInventory": {
+    "repository": "ahmeterenodaci/New-York-Stock-Exchange--NYSE--including-Symbols-and-Logos",
+    "result": "not-enumerated",
+    "reason": "GitHub API returned HTTP 403 rate limit exceeded. Stopped; no claim about repository coverage."
+  }
+}
