@@ -77,3 +77,24 @@ fund/debt listings. OTC and excluded ETFs are outside this snapshot.
 Original code and curated metadata are MIT licensed. Linked logos retain their
 owners' rights and source-provider terms. No third-party artwork pack is committed
 or released. [Asset policy](assets/README.md) covers image contributions separately.
+
+## Fund manager logos
+
+[funds-catalog.json](funds-catalog.json) is a separate, reviewed profile for
+institutional managers. Its initial 16 managers use exact SEC CIKs, official
+website references and visually checked PNG URL metadata. Berkshire Hathaway and
+Berkshire Asset are separate identities and have separate marks. This profile
+contains corporate marks, not portraits copied from another application.
+
+```sh
+python3 scripts/funds.py validate
+python3 scripts/funds.py build --check
+python3 scripts/funds.py resolve 0001067983
+```
+
+Edit one file under `data/funds/`; review identity via SEC submissions and the
+manager's official website, then review the actual image. Brand favicon services
+and source owners retain their own rights. PNG files are not published in this
+repository; consumers should cache privately, enforce source/byte limits and
+verify recorded hashes. Wide official marks are allowed up to 4096 per dimension
+with a 4-megapixel total cap. See [fund profile format](docs/fund-format.md).

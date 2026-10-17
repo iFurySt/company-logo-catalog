@@ -1,0 +1,28 @@
+{
+  "id": "bridgewater-associates",
+  "name": "Bridgewater Associates, LP",
+  "displayName": "Bridgewater Associates",
+  "cik": "0001350694",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://bridgewater.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001350694.json",
+    "https://13f.info/manager/0001350694-bridgewater-associates-lp",
+    "https://bridgewater.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fbridgewater.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://bridgewater.com/",
+      "redistribution": "not-granted",
+      "sha256": "38060c1db5cf050a6f83494bcd46c5d49f199f859b68d9a963463d68b5ee5e2e",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

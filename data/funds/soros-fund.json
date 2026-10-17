@@ -1,0 +1,28 @@
+{
+  "id": "soros-fund",
+  "name": "SOROS FUND MANAGEMENT LLC",
+  "displayName": "Soros Fund",
+  "cik": "0001029160",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://sorosfundmgmt.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001029160.json",
+    "https://13f.info/manager/0001029160-soros-fund-management-llc",
+    "https://sorosfundmgmt.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://sorosfundmgmt.com/wp-content/uploads/2025/04/Favicon_512x512px-1-150x150.png",
+      "source": "issuer-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://sorosfundmgmt.com/",
+      "redistribution": "not-granted",
+      "sha256": "3f7806e2c7684681862cebc462560584631598a3945c2ca3d26302d226bfd656",
+      "width": 150,
+      "height": 150,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

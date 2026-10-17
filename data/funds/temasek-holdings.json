@@ -1,0 +1,28 @@
+{
+  "id": "temasek-holdings",
+  "name": "Temasek Holdings (Private) Ltd",
+  "displayName": "Temasek Holdings",
+  "cik": "0001021944",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://temasek.com.sg/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001021944.json",
+    "https://13f.info/manager/0001021944-temasek-holdings-private-ltd",
+    "https://temasek.com.sg/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Ftemasek.com.sg&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://temasek.com.sg/",
+      "redistribution": "not-granted",
+      "sha256": "551ebc5cd18bbd03e648c852b3f9c9d7d46a61f3cb33ee863462e0e576d1aedb",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

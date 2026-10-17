@@ -1,0 +1,28 @@
+{
+  "id": "panagora-asset",
+  "name": "PANAGORA ASSET MANAGEMENT INC",
+  "displayName": "PanAgora Asset",
+  "cik": "0000883677",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://panagora.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0000883677.json",
+    "https://13f.info/manager/0000883677-panagora-asset-management-inc",
+    "https://panagora.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fpanagora.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://panagora.com/",
+      "redistribution": "not-granted",
+      "sha256": "9e6be74751f7e5c384cb50df15fa8de074e65536c1c7d8b79192a7ea54913562",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

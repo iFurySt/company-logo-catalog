@@ -1,0 +1,28 @@
+{
+  "id": "whale-rock",
+  "name": "Whale Rock Capital Management LLC",
+  "displayName": "Whale Rock",
+  "cik": "0001387322",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://whalerockcapital.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001387322.json",
+    "https://13f.info/manager/0001387322-whale-rock-capital-management-llc",
+    "https://whalerockcapital.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://www.whalerockcapital.com/Templates/Whalerock/media/logo.png",
+      "source": "issuer-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://whalerockcapital.com/",
+      "redistribution": "not-granted",
+      "sha256": "c11aba77a1e56fb7e662b1372110576d76ff72d215e614ad863b41a96ca46ba7",
+      "width": 2150,
+      "height": 764,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

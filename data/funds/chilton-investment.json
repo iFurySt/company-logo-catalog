@@ -1,0 +1,28 @@
+{
+  "id": "chilton-investment",
+  "name": "CHILTON INVESTMENT CO INC.",
+  "displayName": "Chilton Investment",
+  "cik": "0001332632",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://chiltonfunds.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001332632.json",
+    "https://13f.info/manager/0001332632-chilton-investment-co-inc",
+    "https://chiltonfunds.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fchiltonfunds.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://chiltonfunds.com/",
+      "redistribution": "not-granted",
+      "sha256": "380c6726c5c6d08d99894da948b501e17564f4d032f4ff055ec74c1ebfbb1e97",
+      "width": 16,
+      "height": 16,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

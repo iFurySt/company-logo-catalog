@@ -1,0 +1,28 @@
+{
+  "id": "berkshire-asset",
+  "name": "BERKSHIRE ASSET MANAGEMENT LLC/PA",
+  "displayName": "Berkshire Asset",
+  "cik": "0000949012",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://berkshireasset.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0000949012.json",
+    "https://13f.info/manager/0000949012-berkshire-asset-management-llc-pa",
+    "https://berkshireasset.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fberkshireasset.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://berkshireasset.com/",
+      "redistribution": "not-granted",
+      "sha256": "4f3abe826d210e9899169e2e721dc441b0daca4735f00e655cabd5000e6a7711",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

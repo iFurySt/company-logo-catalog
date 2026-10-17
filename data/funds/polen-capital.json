@@ -1,0 +1,28 @@
+{
+  "id": "polen-capital",
+  "name": "POLEN CAPITAL MANAGEMENT LLC",
+  "displayName": "Polen Capital",
+  "cik": "0001034524",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://polencapital.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001034524.json",
+    "https://13f.info/manager/0001034524-polen-capital-management-llc",
+    "https://polencapital.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fpolencapital.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://polencapital.com/",
+      "redistribution": "not-granted",
+      "sha256": "d88e7362279a275ba3c9f028db07df5ae7a8eb109516af9441b7be8779c47c31",
+      "width": 64,
+      "height": 64,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

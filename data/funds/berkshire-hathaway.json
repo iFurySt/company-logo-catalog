@@ -1,0 +1,28 @@
+{
+  "id": "berkshire-hathaway",
+  "name": "BERKSHIRE HATHAWAY INC",
+  "displayName": "Berkshire Hathaway",
+  "cik": "0001067983",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://berkshirehathaway.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001067983.json",
+    "https://13f.info/manager/0001067983-berkshire-hathaway-inc",
+    "https://berkshirehathaway.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://financialmodelingprep.com/image-stock/BRK-B.png",
+      "source": "fmp-public-image",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://berkshirehathaway.com/",
+      "redistribution": "not-granted",
+      "sha256": "74e4092f93a90a16f6882bb2b5f13aaf1122e8fee0e731e1ca1580db3d20cea4",
+      "width": 100,
+      "height": 100,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

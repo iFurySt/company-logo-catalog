@@ -1,0 +1,28 @@
+{
+  "id": "exoduspoint-capital",
+  "name": "ExodusPoint Capital Management, LP",
+  "displayName": "ExodusPoint Capital",
+  "cik": "0001736225",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://exoduspoint.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001736225.json",
+    "https://13f.info/manager/0001736225-exoduspoint-capital-management-lp",
+    "https://exoduspoint.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fexoduspoint.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://exoduspoint.com/",
+      "redistribution": "not-granted",
+      "sha256": "4d42f4cfe9c290f48582ee94d68e07d77a906389ba3a75c272f16ba3c5ecdd5c",
+      "width": 64,
+      "height": 64,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

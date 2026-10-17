@@ -1,0 +1,28 @@
+{
+  "id": "harris-associates",
+  "name": "HARRIS ASSOCIATES L P",
+  "displayName": "Harris Associates",
+  "cik": "0000813917",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://harrisassoc.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0000813917.json",
+    "https://13f.info/manager/0000813917-harris-associates-l-p",
+    "https://harrisassoc.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://harrisassoc.com/wp-content/uploads/sites/2/2024/07/cropped-Harris_Oakmark_Stacked_W-Bl-70x70-1-192x192.png",
+      "source": "issuer-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://harrisassoc.com/",
+      "redistribution": "not-granted",
+      "sha256": "f1a90807996e278c1a646f085dc055f1dc13c6748a9ef1d9733c30ebfb5467b8",
+      "width": 192,
+      "height": 192,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

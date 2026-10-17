@@ -1,0 +1,28 @@
+{
+  "id": "rokos-capital",
+  "name": "Rokos Capital Management LLP",
+  "displayName": "Rokos Capital",
+  "cik": "0001666335",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://rokoscapital.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001666335.json",
+    "https://13f.info/manager/0001666335-rokos-capital-management-llp",
+    "https://rokoscapital.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Frokoscapital.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://rokoscapital.com/",
+      "redistribution": "not-granted",
+      "sha256": "f0a926f7c64187a1c391b69623f8464b71bcca6258326a81b2ac7147768f0365",
+      "width": 20,
+      "height": 20,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}

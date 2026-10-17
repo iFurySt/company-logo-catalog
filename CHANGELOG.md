@@ -1,5 +1,12 @@
 # Changelog
 
+## Fund manager profile 0.1.0 — 2026-10-17
+
+- Add 16 SEC-CIK-verified institutional manager identities and reviewed logo URL metadata.
+- Add separate funds-catalog.json, exact-CIK resolver, deterministic build and CI tests.
+- Preserve artwork ownership; publish no third-party image files or portraits.
+
+
 ## 0.3.0 — 2026-10-17
 
 - Add 24 visually reviewed US issuer records, prioritizing the E-symbol list.

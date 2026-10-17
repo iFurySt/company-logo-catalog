@@ -1,0 +1,28 @@
+{
+  "id": "centerbook-partners",
+  "name": "CenterBook Partners LP",
+  "displayName": "CenterBook Partners",
+  "cik": "0001872738",
+  "reviewedAt": "2026-10-17",
+  "websiteUrl": "https://centerbook.com/",
+  "identityEvidenceUrls": [
+    "https://data.sec.gov/submissions/CIK0001872738.json",
+    "https://13f.info/manager/0001872738-centerbook-partners-lp",
+    "https://centerbook.com/"
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fcenterbook.com&size=128",
+      "source": "public-brand-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "referenceUrl": "https://centerbook.com/",
+      "redistribution": "not-granted",
+      "sha256": "4d5c0e595251724a6998df8a0d6a2be55b61baa855519278f54956f4e7b9d70c",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "notes": "Corporate manager mark compared with its official public website; this is not a fund manager portrait. Metadata only; source owner retains artwork rights."
+    }
+  ]
+}
