@@ -1,0 +1,48 @@
+{
+  "id": "skydance-corporation",
+  "name": "Skydance Corporation",
+  "reviewedAt": "2026-10-18",
+  "websiteUrl": "https://ir.skydance.com/",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://ir.skydance.com/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "SKYD",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://ir.skydance.com/"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SKYD.W",
+      "exchange": "NYSE",
+      "kind": "warrant",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://ir.skydance.com/",
+        "https://ir.skydance.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Skydance_Corporation_Dark_Logo_2026.svg/330px-Skydance_Corporation_Dark_Logo_2026.svg.png",
+      "sha256": "67d2b39e3a0693781794dd2332fa31ca8d8b45846d72ed2d0fceef37d29a44a7",
+      "width": 330,
+      "height": 59,
+      "format": "png",
+      "source": "wikimedia-png-preview",
+      "status": "verified",
+      "checkedAt": "2026-10-18",
+      "referenceUrl": "https://commons.wikimedia.org/wiki/File:Skydance_Corporation_Dark_Logo_2026.svg",
+      "redistribution": "not-granted",
+      "notes": "Current black SKYDANCE wordmark with curved baseline. Commons description identifies the October 2026 corporate mark and cites the corporate site; small PNG preview inspected, not a subsidiary or fan-made merger mark."
+    }
+  ]
+}

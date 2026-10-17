@@ -1,0 +1,50 @@
+{
+  "id": "franklin-street-properties",
+  "name": "Franklin Street Properties Corp.",
+  "reviewedAt": "2026-10-18",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://ir.fspreit.com/overview/default.aspx"
+  ],
+  "websiteUrl": "https://ir.fspreit.com/overview/default.aspx",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "FSP",
+      "exchange": "NYSE_AMERICAN",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://ir.fspreit.com/overview/default.aspx"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://raw.githubusercontent.com/ShaadyEmad/ticker-logos/880d2c97ba7b60c3216e4612d48864d9f5f767b5/US%20Market/PNG/FSP.png",
+      "source": "pinned-repository-png",
+      "status": "verified",
+      "checkedAt": "2026-10-18",
+      "referenceUrl": "https://ir.fspreit.com/overview/default.aspx",
+      "redistribution": "not-granted",
+      "sha256": "b2b147ee94e7d57ae9649a90fcf480f96d85e797976bbbe82aed00bd0106c64f",
+      "width": 1000,
+      "height": 1000,
+      "format": "png",
+      "notes": "Blue-column FSP device compared with the corporate FSP wordmark in official annual-report materials. PNG repository source checked; no artwork bundled."
+    },
+    {
+      "url": "https://financialmodelingprep.com/image-stock/FSP.png",
+      "source": "fmp-public-image",
+      "status": "rejected",
+      "checkedAt": "2026-10-18",
+      "referenceUrl": "https://ir.fspreit.com/overview/default.aspx",
+      "redistribution": "not-granted",
+      "sha256": "f7ceac8687fd47c51cdce8151f1157c2ca3edf150a4dbc0be7719ba10f4bb3c4",
+      "width": 57,
+      "height": 57,
+      "format": "png",
+      "notes": "Rejected: valid PNG decodes to a blank white image, not usable company artwork."
+    }
+  ]
+}

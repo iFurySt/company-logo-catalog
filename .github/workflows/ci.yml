@@ -25,11 +25,13 @@ jobs:
       - run: node --test tests/test_probe.mjs
       - run: >-
           python3 scripts/coverage.py
-          --sources data/directory/2026-10-14
-          --checks data/directory/2026-10-14/source-checks.jsonl
-          --alternatives data/directory/2026-10-14/github-candidates.json
-          --publisher-checks data/directory/2026-10-14/publisher-checks.jsonl
-          --date 2026-10-14
+          --sources data/directory/2026-10-18
+          --checks data/directory/2026-10-18/source-checks.jsonl
+          --alternatives data/directory/2026-10-18/github-candidates.json
+          --publisher-checks data/directory/2026-10-18/publisher-checks.jsonl
+          --date 2026-10-18
           --output catalog-provider.json
           --summary coverage.json
           --gaps missing-logos.csv --check
+
+      - run: python3 scripts/app_fallbacks.py --check

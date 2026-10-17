@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.0 — 2026-10-18
+
+- Archive the current 7,484-security directory with original source provenance.
+- Publish a full per-symbol App availability audit, separate from identity review.
+- Add 588 exact best-effort PNG fallback mappings with explicit provisional basis.
+- Check 18 additional pinned repository images; 17 decode successfully.
+- Add SKYD/SKYD.W, VMRK and VYLR branding; replace blank FSP/KNX images.
+- 7,108 securities pass real App decoding and offline cache reads; S&P 500
+  (503 securities) and Nasdaq-100 (101) have complete PNG availability.
+- Keep 376 App gaps explicit: 338 without a selected source and 38 SVG-only.
+- Reviewed identity catalog: 47 companies / 65 securities / 71 keys / 45 images.
+- No third-party artwork pack is published.
+
 ## Fund manager profile 0.1.0 — 2026-10-17
 
 - Add 16 SEC-CIK-verified institutional manager identities and reviewed logo URL metadata.

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "nasdaqlisted",
+    "url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "fetchedAt": "2026-10-17T06:46:22.024924000Z",
+    "sha256": "9f5c42346e6ab594a9e16bed99757e38cda89645c776b987626c9f51813bc99b"
+  },
+  {
+    "name": "otherlisted",
+    "url": "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "fetchedAt": "2026-10-17T06:46:22.498649000Z",
+    "sha256": "cb31dccc5b4ac680fb9170552d3b479c9f6fe21aae5c32ab21615b5fc8a78012"
+  }
+]

@@ -8,26 +8,33 @@ warrants and preferred shares use the same company avatar.
 
 ## Coverage
 
-The 2026-10-14 Nasdaq Trader snapshot contains **7,481 non-test, non-ETF securities**.
+The 2026-10-18 Nasdaq Trader snapshot contains **7,484 non-test, non-ETF securities**.
 Every one has a recorded source outcome in [catalog-provider.json](catalog-provider.json).
 
 | Result | Securities |
 | --- | ---: |
-| Reviewed company image | 53 |
-| Exact-symbol provider image, not identity-reviewed | 6,462 |
-| Shared image proposed from directory company names, not issuer-reviewed | 562 |
-| Probed repository image, not identity-reviewed | 14 |
-| Publisher SVG, not identity-reviewed | 48 |
-| No usable source found in this pass | 342 |
+| Reviewed company image | 59 |
+| Exact-symbol provider image, not identity-reviewed | 6,461 |
+| Shared image proposed from directory company names, not issuer-reviewed | 561 |
+| Probed repository image, not identity-reviewed | 27 |
+| Publisher SVG, not identity-reviewed | 38 |
+| No usable source found in this pass | 338 |
 
 These are security counts, not distinct companies. Source availability is **not**
-verified issuer/logo identity. The reviewed catalog contains 42 companies,
-59 securities, 65 exact symbol/alias keys and 40 visually reviewed company images.
+verified issuer/logo identity. The reviewed catalog contains 47 companies,
+65 securities, 71 exact symbol/alias keys and 45 visually reviewed company images.
 See [coverage.json](coverage.json), [missing-logos.csv](missing-logos.csv) and
 [full review notes](docs/full-directory-review.md).
 
-Latest batch: [24 issuer reviews, 2026-10-17](docs/review-2026-10-17.md), including
-ECL, ED, EFX, EG, EIX, EL and the corrected Elevance Health image.
+Previous [24 issuer reviews](docs/review-2026-10-17.md) covered the E-list and
+Elevance correction. The current pass adds five issuers, including recent corporate
+changes, and replaces two blank provider images.
+
+App availability audit: [full directory results](docs/availability-2026-10-18.md).
+7,108 PNG mappings passed real decoder + offline App-cache reads; 376 remain
+unavailable to the PNG-only App (338 source gaps + 38 SVG-only candidates).
+Both built-in index scopes have complete PNG availability. This is separate from
+manual issuer/logo verification.
 
 ## Use
 
@@ -66,7 +73,7 @@ node --test tests/test_probe.mjs
 
 See [maintenance commands](docs/full-directory-maintenance.md) for bounded,
 resumable source probes and deterministic inventory rebuilding. CI is offline;
-it validates both generated profiles and runs 30 regression tests.
+it validates both generated profiles and runs 35 regression tests.
 
 ## Scope and license
 

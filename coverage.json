@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-10-14",
+  "asOf": "2026-10-18",
   "scope": "non-test-non-etf-us-securities",
   "summary": {
-    "securities": 7481,
-    "reviewedIssuerSecurities": 59,
-    "reviewedLogoSecurities": 53,
+    "securities": 7484,
+    "reviewedIssuerSecurities": 65,
+    "reviewedLogoSecurities": 59,
     "sourceOutcomes": {
-      "not-found": 962,
-      "png-unverified": 6500,
+      "not-found": 964,
+      "png-unverified": 6501,
       "rejected-image": 19
     },
-    "unverifiedImageSecurities": 6500,
-    "sharedIssuerCandidateSecurities": 562,
-    "otherSourceCandidateSecurities": 5106,
+    "unverifiedImageSecurities": 6501,
+    "sharedIssuerCandidateSecurities": 561,
+    "otherSourceCandidateSecurities": 5119,
     "publisherCandidateSecurities": 48,
-    "anyKnownSourceSecurities": 7139,
+    "anyKnownSourceSecurities": 7146,
     "sourceCheckComplete": true,
     "verifiedLogoComplete": false,
-    "usableSourceSecurities": 7139,
-    "noUsableSourceSecurities": 342,
+    "usableSourceSecurities": 7146,
+    "noUsableSourceSecurities": 338,
     "resolverOutcomes": {
-      "directory-name-candidate": 562,
-      "provider-unverified": 6462,
-      "publisher-unverified": 48,
-      "repository-unverified": 14,
-      "reviewed": 53,
-      "unresolved": 342
+      "directory-name-candidate": 561,
+      "provider-unverified": 6461,
+      "publisher-unverified": 38,
+      "repository-unverified": 27,
+      "reviewed": 59,
+      "unresolved": 338
     }
   }
 }

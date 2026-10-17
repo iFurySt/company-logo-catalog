@@ -1,0 +1,30 @@
+{
+  "auditedAt": "2026-10-17T16:40:12.085Z",
+  "directorySnapshot": "1cba666fc66b5b4dd10579bd7192d13987fb483b73fcb72afcd5011b1613a985",
+  "sourceSnapshotDate": "2026-10-18",
+  "total": 7484,
+  "importedCache": true,
+  "outcomes": {
+    "available": 7108,
+    "no-supported-source": 376
+  },
+  "collections": [
+    {
+      "id": "sp500",
+      "total": 503,
+      "outcomes": {
+        "available": 503
+      },
+      "gaps": []
+    },
+    {
+      "id": "nasdaq100",
+      "total": 101,
+      "outcomes": {
+        "available": 101
+      },
+      "gaps": []
+    }
+  ],
+  "uniqueImagesDecoded": 5928
+}

@@ -118,12 +118,12 @@ def read_checks(path):
 def validate_alternatives(index):
     require(isinstance(index, dict), 'Alternative source index must be an object')
     for symbol, sources in index.items():
-        require(isinstance(sources, list) and len(sources) <= 2, 'Bounded alternative sources required')
+        require(isinstance(sources, list) and len(sources) <= 3, 'Bounded alternative sources required')
         for source in sources:
             url(source['url'])
             path = unquote(urlsplit(source['url']).path)
             require(urlsplit(source['url']).hostname == 'raw.githubusercontent.com' and
-                    re.fullmatch(r'/(?:nvstly/icons|ShaadyEmad/ticker-logos)/[a-f0-9]{40}/(?:ticker_icons|US Market/PNG)/[^/]+\.png', path),
+                    re.fullmatch(r'/(?:(?:nvstly/icons/[a-f0-9]{40}/ticker_icons)|(?:ShaadyEmad/ticker-logos/[a-f0-9]{40}/US Market/PNG)|(?:ngnmarket/us-companies-logos/[a-f0-9]{40}/dist/png))/[^/]+\.png', path),
                     'Use a pinned known repository PNG source')
             require(Path(path).stem.upper() == symbol.upper(), 'Alternative filename must match the exact symbol')
             require(source['status'] == 'filename-present-unverified', 'Never promote filename matches automatically')

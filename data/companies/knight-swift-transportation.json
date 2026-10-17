@@ -1,0 +1,50 @@
+{
+  "id": "knight-swift-transportation",
+  "name": "Knight-Swift Transportation Holdings Inc.",
+  "reviewedAt": "2026-10-18",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://investor.knight-swift.com/news/news-details/2025/Knight-Swift-Transportation-Holdings-Inc--Endorses-Union-Pacific--Norfolk-Southern-Merger/default.aspx"
+  ],
+  "websiteUrl": "https://knight-swift.com/",
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "KNX",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://investor.knight-swift.com/news/news-details/2025/Knight-Swift-Transportation-Holdings-Inc--Endorses-Union-Pacific--Norfolk-Southern-Merger/default.aspx"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://raw.githubusercontent.com/ShaadyEmad/ticker-logos/880d2c97ba7b60c3216e4612d48864d9f5f767b5/US%20Market/PNG/KNX.png",
+      "source": "pinned-repository-png",
+      "status": "verified",
+      "checkedAt": "2026-10-18",
+      "referenceUrl": "https://investor.knight-swift.com/news/news-details/2025/Knight-Swift-Transportation-Holdings-Inc--Endorses-Union-Pacific--Norfolk-Southern-Merger/default.aspx",
+      "redistribution": "not-granted",
+      "sha256": "cd2050a61e2486b776eec8dbfb40b2d9e9379867c4bd5f5bc137e455adff7219",
+      "width": 1000,
+      "height": 1000,
+      "format": "png",
+      "notes": "Knight red K/helmet device compared with the Knight brand used in the holding company official paired Knight/Swift IR artwork. This is the recognizable Knight device, not a claim that it reproduces the complete paired corporate wordmark."
+    },
+    {
+      "url": "https://financialmodelingprep.com/image-stock/KNX.png",
+      "source": "fmp-public-image",
+      "status": "rejected",
+      "checkedAt": "2026-10-18",
+      "referenceUrl": "https://investor.knight-swift.com/news/news-details/2025/Knight-Swift-Transportation-Holdings-Inc--Endorses-Union-Pacific--Norfolk-Southern-Merger/default.aspx",
+      "redistribution": "not-granted",
+      "sha256": "7868562a9bc6b9690f6cbe2f7fdb959b9dc815a5c59a057813b7df60b66f9bf3",
+      "width": 250,
+      "height": 250,
+      "format": "png",
+      "notes": "Rejected: valid PNG decodes to a blank white image, not usable company artwork."
+    }
+  ]
+}

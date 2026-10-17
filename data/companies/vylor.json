@@ -1,0 +1,37 @@
+{
+  "id": "vylor",
+  "name": "Vylor Inc.",
+  "reviewedAt": "2026-10-18",
+  "websiteUrl": "https://www.vylor.com/",
+  "identityEvidenceUrls": [
+    "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+    "https://www.vylor.com/"
+  ],
+  "securities": [
+    {
+      "market": "US",
+      "symbol": "VYLR",
+      "exchange": "NYSE",
+      "kind": "common",
+      "evidenceUrls": [
+        "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt",
+        "https://www.vylor.com/"
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE%2CSIZE%2CURL&url=https%3A%2F%2Fwww.vylor.com&size=128",
+      "sha256": "fcc66098f893b7608712c54494a138adfff40dd980dd08056bc5357536608d0a",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "source": "verified-site-favicon",
+      "status": "verified",
+      "checkedAt": "2026-10-18",
+      "referenceUrl": "https://www.vylor.com/nav.plain.html",
+      "redistribution": "not-granted",
+      "notes": "Black V/y device compared with the new Vylor brand and official navigation wordmark. Exact known-domain favicon proxy, not the former parent company mark."
+    }
+  ]
+}
